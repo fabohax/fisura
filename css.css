@@ -1,0 +1,41 @@
+@keyframes darking {
+  0% {background: #000;}
+  100% {background: #003;}
+}
+
+@keyframes flicker {
+  0% {color: #fff;}
+  25% {color: #fff;}
+  26% {color: transparent;}
+  100% {color: transparent;}
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border:transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border:1px solid #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+body{
+	background:#fff;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+	color:#fff;
+	animation: darking 1s ease-in forwards;
+}
