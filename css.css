@@ -1,18 +1,16 @@
-@keyframes darking {
+@keyframes toWhite {
   0% {background: #000;}
-  100% {background: #003;}
+  100% {background: #fff;}
 }
 
-@keyframes flicker {
-  0% {color: #fff;}
-  25% {color: #fff;}
-  26% {color: transparent;}
-  100% {color: transparent;}
+@keyframes toBlack {
+  0% {background: #fff;}
+  100% {background: #000;}
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 /* Track */
@@ -23,13 +21,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fff;
-  border:1px solid #fff;
+  background: #000;
+  border:1px solid #000;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff;
+  background: #000;
 }
 
 body{
@@ -37,5 +35,5 @@ body{
 	overflow: hidden;
 	font-family: 'Roboto', sans-serif;
 	color:#fff;
-	animation: darking 1s ease-in forwards;
+	animation: toWhite 1s ease-in forwards;
 }
