@@ -34,6 +34,18 @@ body{
 	background:#fff;
 	overflow: hidden;
 	font-family: 'Roboto', sans-serif;
-	color:#fff;
+	color:#000;
 	animation: toWhite 1s ease-in forwards;
+}
+
+front{
+	position:absolute;
+	background:0.5 white;
+	margin:0px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+mouth{
+	
 }
