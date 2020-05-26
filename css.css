@@ -46,6 +46,15 @@ front{
 	vertical-align:middle;
 }
 
-mouth{
-	
+fisura{
+	color:#000;
+	font-size:72px; 
 }
+
+mouth{
+	position:absolute;
+	margin:10%;
+	font-size:12px;
+}
+
+
