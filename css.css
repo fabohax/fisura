@@ -49,6 +49,7 @@ front{
 fisura{
 	color:#000;
 	font-size:36px; 
+	z-index:100;
 }
 
 mouth{
