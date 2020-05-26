@@ -46,6 +46,8 @@ front{
 	vertical-align:middle;
 }
 
+
+
 fisura{
 	color:#000;
 	font-size:72px; 
@@ -53,8 +55,7 @@ fisura{
 
 mouth{
 	position:absolute;
-	margin:10%;
-	font-size:12px;
+	top:20px;
+	margin:0 auto;
+	font-size:18px;
 }
-
-
