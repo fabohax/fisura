@@ -70,10 +70,12 @@ mouth{
 	margin:0 auto;
 	top:0px;
 	left:0px;
+	text-align:left;
 }
 
 mouth div img{
 	position:relative;
 	display:block;
 	height:80%;
+	text-align:left;
 }
