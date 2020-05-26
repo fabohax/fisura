@@ -40,10 +40,11 @@ body{
 
 front{
 	position:absolute;
-	background:white;
+	background:transparent;
 	height:100%;
 	width:100%;
-	text-align:center;
+	margin:0 auto;
+	text-align:right;
 	vertical-align:middle;
 	z-index:100;
 }
