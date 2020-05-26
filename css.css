@@ -40,6 +40,8 @@ body{
 
 front{
 	position:absolute;
+	top:0px;
+	right:0px;
 	background:transparent;
 	height:100%;
 	width:100%;
