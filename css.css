@@ -47,6 +47,10 @@ front{
 }
 
 fisura{
+	position:absolute;
+	display:block;
+	top:0px;
+	right:0px;
 	color:#000;
 	font-size:36px; 
 	z-index:100;
