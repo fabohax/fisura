@@ -62,9 +62,10 @@ fisura{
 }
 
 mouth{
-	position:absolute;
-	display:inline-block;
-	width:50%;
+	position:relative;
+	display:block;
+	width:70%;
+	height:100%;
 	font-size:18px;
 	margin:0 auto;
 	top:0px;
@@ -72,5 +73,7 @@ mouth{
 }
 
 mouth div img{
-	width:50%;
+	position:relative;
+	display:block;
+	height:80%;
 }
