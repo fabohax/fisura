@@ -69,9 +69,21 @@ front{
 	height:100%;
 	min-width:3%;
 	max-width:3%;
+	padding-top:6.6%;
 	border:none;
 	color:white;
+	vertical-align: middle;
 	z-index:100;
+}
+
+front span{
+	position: relative;
+	display:block;
+	transform:rotate(-90deg);
+	padding:12vh 0vh;
+	font-size:0.75vw;
+	font-weight: bold;
+	letter-spacing: 0.75vw;
 }
 
 face{
