@@ -78,10 +78,10 @@ face{
 	position:absolute;
 	display:block;
 	top:0px;
-	left:0px;
-	height:500vh;
-	width:500vw;
-	z-index:100;
+	left:27vh;
+	height:210vh;
+	width:700vw;
+	z-index:50;
 	transform: rotate(-90deg) translateX(-100vh);
 	transform-origin:top left;
 	overflow-y:scroll;
@@ -108,9 +108,9 @@ mouth{
 .slide img{
 	width: auto;
 	height:70vh;
-	padding:15vh 15vh 0vh;
+	padding:15vh 0vh 3vh;
 }
 
-.slide a span{
-	margin:0px 150px;
+.slide a{
+	font-size:1.75vh;
 }
