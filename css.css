@@ -1,5 +1,6 @@
 @keyframes toWhite {
   0% {background: #000;}
+  99% {backgroound:#000;}
   100% {background: #fff;}
 }
 
@@ -31,51 +32,85 @@
 }
 
 body{
-	background:#fff;
-	overflow: hidden;
+	position:relative;
+	padding:0px;
+	margin:0px;
+	overflow:hidden;
 	font-family: 'Roboto', sans-serif;
-	color:#000;
 	animation: toWhite 3s ease-in forwards;
 }
 
-front{
+a{
+	color:#000;
+	text-decoration:none;
+}
+
+
+
+logo{
 	position:absolute;
+	display:block;
+	top:-3%;
+	left:3%;
+	z-index:1000;
+}
+
+logo img{
+	width:9vw;
+}
+
+front{
+	position:relative;
+	display:block;
 	top:0px;
-	right:0px;
-	background:transparent;
+	left:0px;
+	bottom:0px;
+	background: #000;
 	height:100%;
-	width:100%;
-	margin:0 auto;
-	text-align:right;
-	vertical-align:middle;
+	min-width:3%;
+	max-width:3%;
+	border:none;
+	color:white;
 	z-index:100;
 }
 
-fisura{
+face{
 	position:absolute;
 	display:block;
 	top:0px;
-	right:0px;
-	color:#000;
-	font-size:36px;
-	text-align:right;
+	left:0px;
+	height:500vh;
+	width:500vw;
+	z-index:100;
+	transform: rotate(-90deg) translateX(-100vh);
+	transform-origin:top left;
+	overflow-y:scroll;
+	overflow-x:hidden;
 }
 
 mouth{
 	position:relative;
-	display:block;
-	width:70%;
-	height:100%;
-	font-size:18px;
-	margin:0 auto;
-	top:0px;
 	left:0px;
-	text-align:left;
+	display:flex;
+	flex-direction:row;
+	height:100vh;
+	width:500vw;
+	transform: rotate(90deg) translateY(-100vh);
+	transform-origin:top left;
+	z-index:10;
 }
 
-mouth div img{
-	position:relative;
-	display:block;
-	height:80%;
-	text-align:left;
+.slide{
+	height:100vh;
+	width:100vw;
+}
+
+.slide img{
+	width: auto;
+	height:70vh;
+	padding:15vh 15vh 0vh;
+}
+
+.slide a span{
+	margin:0px 150px;
 }
