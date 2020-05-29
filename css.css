@@ -67,6 +67,7 @@ logo{
 
 logo img{
 	width:9vw;
+	filter: invert(0);
 }
 
 front{
@@ -77,8 +78,7 @@ front{
 	bottom:0px;
 	background: #000;
 	height:100vh;
-	min-width:3vw;
-	max-width:3vw;
+	width:3vw;
 	border:none;
 	color:white;
 	text-align: center;
@@ -198,8 +198,16 @@ bio{
 }
 
 contacto{
-	position: relative;
+	position: absolute;
 	display: none;
+	opacity: 0;
+	right:0px;
+	bottom:0px;
 	font-size: 5vh;
 	top:50vh;
+	text-align: right;
+	padding: 10vh;
+	color:white;
+	user-select:text;
+	z-index: 1000;
 }
