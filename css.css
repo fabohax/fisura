@@ -143,7 +143,7 @@ mouth{
 	display:flex;
 	flex-direction:row;
 	height:100vh;
-	width:375vw;
+	width:380vw;
 	transform: rotate(90deg) translateY(-100vh);
 	transform-origin:top left;
 	overflow-y:scroll; 
@@ -186,12 +186,12 @@ bio{
 	display:block;
 	top:20vh;
 	bottom:0px;
-	left:10vh;
+	left:12vh;
 	height: 100vh;
 	width: auto;
-	padding:0vh;
+	padding:0vh 10vh;
 	line-height: 5vh;
-	font-size: 2.5vh;
+	font-size: 2vh;
 	overflow:hidden;
 	column-count: 3;
 	column-gap: 10vh
