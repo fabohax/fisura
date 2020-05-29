@@ -1,7 +1,8 @@
 @keyframes toWhite {
-  0% {background: #000;}
+  0% {background: #000;opacity:0%}
+  50%{background: #000;opacity:50%}
   99% {backgroound:#000;}
-  100% {background: #fff;}
+  100% {background: #fff;opacity: 100%}
 }
 
 @keyframes toBlack {
@@ -43,6 +44,12 @@ body{
 	user-select: none; /* Standard syntax */
 }
 
+.dark{
+	background: #000;
+	animation: none;
+	color:#fff;
+}
+
 a{
 	color:#000;
 	text-decoration:none;
@@ -69,9 +76,9 @@ front{
 	left:0px;
 	bottom:0px;
 	background: #000;
-	height:100%;
-	min-width:3%;
-	max-width:3%;
+	height:100vh;
+	min-width:3vw;
+	max-width:3vw;
 	border:none;
 	color:white;
 	text-align: center;
@@ -84,10 +91,10 @@ front div{
 }
 
 front a span{
-	position: relative;
-	height:3vh;
+	position: absolute;
 	display:block;
 	color:#fff;
+	height:3vh;
 	transform:rotate(-90deg);
 	font-size:0.75vw;
 	font-weight: bold;
@@ -96,6 +103,9 @@ front a span{
 	margin:0 auto;
 	vertical-align: middle;
 	text-align: center;
+}
+
+front a span .one{
 }
 
 face{
@@ -154,4 +164,27 @@ square img{
 	display: block;
 	top:-15vh;
 	height:33vh;
+}
+
+bio{
+	position: absolute;
+	display:block;
+	top:20vh;
+	bottom:0px;
+	left:10vh;
+	height: 100vh;
+	width: auto;
+	padding:0vh;
+	line-height: 5vh;
+	font-size: 2.5vh;
+	overflow:hidden;
+	column-count: 3;
+	column-gap: 10vh
+}
+
+contacto{
+	position: relative;
+	display: none;
+	font-size: 5vh;
+	top:50vh;
 }
