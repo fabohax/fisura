@@ -92,20 +92,35 @@ front div{
 
 front a span{
 	position: absolute;
-	display:block;
+	display: flex;
+	left:0px;
 	color:#fff;
 	height:3vh;
+	width: 10vh;
 	transform:rotate(-90deg);
 	font-size:0.75vw;
 	font-weight: bold;
 	letter-spacing: 0.333vw;
-	padding:9vh 0vh;
-	margin:0 auto;
-	vertical-align: middle;
-	text-align: center;
 }
 
-front a span .one{
+#somos{
+	position: absolute;
+	display: flex;
+	top:25vh;
+	left: 0vh;
+}
+
+#galeria{
+	position: absolute;
+	display: flex;
+	top:50vh;
+	left:0vh;
+}
+
+#contacto{
+	position: absolute;	
+	display: flex;
+	top:75vh;
 }
 
 face{
