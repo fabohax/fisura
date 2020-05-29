@@ -38,6 +38,9 @@ body{
 	overflow:hidden;
 	font-family: 'Roboto', sans-serif;
 	animation: toWhite 3s ease-in forwards;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10+ and Edge */
+	user-select: none; /* Standard syntax */
 }
 
 a{
@@ -100,8 +103,8 @@ face{
 	display:block;
 	top:0px;
 	left:27vh;
-	height:210vh;
-	width:700vw;
+	height:150vh;
+	width:100vw;
 	z-index:50;
 	transform: rotate(-90deg) translateX(-100vh);
 	transform-origin:top left;
@@ -115,7 +118,7 @@ mouth{
 	display:flex;
 	flex-direction:row;
 	height:100vh;
-	width:500vw;
+	width:375vw;
 	transform: rotate(90deg) translateY(-100vh);
 	transform-origin:top left;
 	overflow-y:scroll; 
@@ -124,7 +127,7 @@ mouth{
 
 .slide{
 	height:100vh;
-	width:100vw;
+	width:80vw;
 }
 
 .slide img{
@@ -135,4 +138,20 @@ mouth{
 
 .slide a{
 	font-size:1.75vh;
+}
+
+
+square{
+	position: relative;
+	display:block;
+	top:50vh;
+	height:50vh;
+	width:50vh;
+}
+
+square img{
+	position: relative;
+	display: block;
+	top:-15vh;
+	height:33vh;
 }
