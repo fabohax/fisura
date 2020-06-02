@@ -61,7 +61,7 @@ logo{
 	position:absolute;
 	display:block;
 	top:-3%;
-	left:3%;
+	left:6%;
 	z-index:1000;
 }
 
@@ -76,7 +76,7 @@ front{
 	top:0px;
 	left:0px;
 	bottom:0px;
-	background: #000;
+	background: #00f;
 	height:100vh;
 	width:3vw;
 	border:none;
@@ -96,24 +96,31 @@ front a span{
 	left:0px;
 	color:#fff;
 	height:3vh;
-	width: 10vh;
+	width: 7.5vh;
 	transform:rotate(-90deg);
 	font-size:0.75vw;
 	font-weight: bold;
 	letter-spacing: 0.333vw;
 }
 
-#somos{
+#inicio{
 	position: absolute;
 	display: flex;
-	top:25vh;
+	top:20vh;
 	left: 0vh;
 }
 
 #galeria{
 	position: absolute;
 	display: flex;
-	top:50vh;
+	top:37.5vh;
+	left: 0vh;
+}
+
+#nosotros{
+	position: absolute;
+	display: flex;
+	top:57.5vh;
 	left:0vh;
 }
 
@@ -121,6 +128,7 @@ front a span{
 	position: absolute;	
 	display: flex;
 	top:75vh;
+	left:0vh;
 }
 
 face{
@@ -157,8 +165,8 @@ mouth{
 
 .slide img{
 	width: auto;
-	height:70vh;
-	padding:15vh 0vh 3vh;
+	height:50vh;
+	padding:25vh 0vh 3vh;
 }
 
 .slide a{
@@ -184,16 +192,16 @@ square img{
 bio{
 	position: absolute;
 	display:block;
-	top:20vh;
+	top:0vh;
 	bottom:0px;
-	left:12vh;
+	right:0vh;
 	height: 100vh;
-	width: auto;
-	padding:0vh 10vh;
-	line-height: 5vh;
-	font-size: 2vh;
+	width: 50vh;
+	padding:10vh;
+	line-height: 3.3vh;
+	font-size: 1.75vh;
 	overflow:hidden;
-	column-count: 3;
+	column-count: 1;
 	column-gap: 10vh
 }
 
@@ -202,8 +210,8 @@ contacto{
 	display: none;
 	opacity: 0;
 	right:0px;
-	bottom:0px;
-	font-size: 5vh;
+	bottom:10vh;
+	font-size: 1.75vh;
 	top:50vh;
 	text-align: right;
 	padding: 10vh;
