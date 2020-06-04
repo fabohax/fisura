@@ -81,54 +81,55 @@ front{
 	width:3vw;
 	border:none;
 	color:white;
-	text-align: center;
-	vertical-align: middle;
 	z-index:100;
 }
 
-front div{
-	margin:20vh 0vh;
+front a{
 }
 
 front a span{
-	position: absolute;
-	display: flex;
-	left:0px;
+	position: relative;
+	display:block;
+	left:1vw;
 	color:#fff;
-	height:3vh;
-	width: 7.5vh;
+	height:3vw;
+	width: 3vw;
 	transform:rotate(-90deg);
-	font-size:0.75vw;
+	font-family: Roboto;
+	font-size:1.33vh;
 	font-weight: bold;
 	letter-spacing: 0.333vw;
+	text-align: center;
 }
 
 #inicio{
 	position: absolute;
 	display: flex;
-	top:20vh;
-	left: 0vh;
+	top:15vh;
 }
 
-#galeria{
+#obras{
 	position: absolute;
 	display: flex;
-	top:37.5vh;
-	left: 0vh;
+	top:30vh;
+}
+
+#artistas{
+	position: absolute;
+	display: flex;
+	top:45vh;
 }
 
 #nosotros{
 	position: absolute;
 	display: flex;
-	top:57.5vh;
-	left:0vh;
+	top:60vh;
 }
 
 #contacto{
 	position: absolute;	
 	display: flex;
-	top:75vh;
-	left:0vh;
+	top:90vh;
 }
 
 face{
