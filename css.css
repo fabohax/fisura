@@ -12,7 +12,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
 }
 
 /* Track */
@@ -111,19 +111,19 @@ front a span{
 #obras{
 	position: absolute;
 	display: flex;
-	top:30vh;
+	top:32.5vh;
 }
 
 #artistas{
 	position: absolute;
 	display: flex;
-	top:45vh;
+	top:47.5vh;
 }
 
 #nosotros{
 	position: absolute;
 	display: flex;
-	top:60vh;
+	top:62.5vh;
 }
 
 #contacto{
@@ -177,34 +177,42 @@ mouth{
 
 
 square{
-	position: relative;
+	position:relative;
 	display:block;
-	top:50vh;
+	top:33vh;
 	height:50vh;
-	width:50vh;
+	margin-right:25vh;
+	font-size: 1.5vh;
+	overflow: hidden;
 }
 
 square img{
 	position: relative;
 	display: block;
-	top:-15vh;
 	height:33vh;
+	overflow: hidden;
 }
 
 bio{
 	position: absolute;
 	display:block;
-	top:0vh;
-	bottom:0px;
-	right:0vh;
-	height: 100vh;
+	top:20vh;
+	left:25vw;
+	bottom:20vh;
 	width: 50vh;
-	padding:10vh;
+	padding: 20vh;
 	line-height: 3.3vh;
 	font-size: 1.75vh;
-	overflow:hidden;
-	column-count: 1;
-	column-gap: 10vh
+	overflow-x:hidden;
+	overflow-y:scroll;
+	text-align: justify;
+	text-justify: auto;
+}
+
+bio img{
+	position: relative;
+	display: block;
+	width:50vh;
 }
 
 contacto{
