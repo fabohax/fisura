@@ -229,3 +229,28 @@ contacto{
 	user-select:text;
 	z-index: 1000;
 }
+
+art{
+	position: absolute;
+	display:block;
+	top:20vh;
+	left:25vw;
+	bottom:20vh;
+	width: 50vh;
+	padding: 0vh 20vh;
+	line-height: 3.3vh;
+	font-size: 1.75vh;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	text-align: justify;
+	text-justify: auto;
+}
+
+art img{
+	height:50vh;
+}
+
+state{
+	position: relative;
+	display:block;
+}
