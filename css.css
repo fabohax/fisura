@@ -12,13 +12,15 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  height: 20px;
+  width: 20px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
   border:transparent;
+  border-right:#000;
 }
 
 /* Handle */
@@ -45,9 +47,14 @@ body{
 }
 
 .dark{
-	background: #000;
+	background: #111;
 	animation: none;
 	color:#fff;
+}
+
+.dark a{
+	color:#fff;
+	font-weight: bolder;
 }
 
 a{
@@ -159,19 +166,19 @@ mouth{
 	z-index:10;
 }
 
-.slide{
+slide{
 	height:100vh;
 	width:50vw;
 }
 
-.slide img{
+slide img{
 	width: auto;
 	max-width:50vw;
-	max-height: 50vh;
+	height: 50vh;
 	padding:25vh 0vh 3vh;
 }
 
-.slide a{
+slide a{
 	font-size:1.75vh;
 }
 
@@ -207,12 +214,17 @@ bio{
 	overflow-y:scroll;
 	text-align: justify;
 	text-justify: auto;
+	user-select:text;
 }
 
 bio img{
 	position: relative;
 	display: block;
 	width:50vh;
+}
+
+bio a span h2{
+	text-decoration: underline;
 }
 
 contacto{
@@ -253,4 +265,26 @@ art img{
 state{
 	position: relative;
 	display:block;
+}
+
+obra{
+	position:relative;
+	bottom:0px;
+}
+
+grid{
+	position: absolute;
+	display: block;
+	columns: 3;
+	overflow-y:scroll;
+}
+
+grid img{
+	width: 10vw;
+}
+
+box{
+	position: relative;
+	display: inline-block;
+	padding:8vw;
 }
