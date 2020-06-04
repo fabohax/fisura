@@ -46,6 +46,10 @@ body{
 	user-select: none; /* Standard syntax */
 }
 
+.scroll{
+	overflow-y: scroll;
+}
+
 .dark{
 	background: #111;
 	animation: none;
@@ -78,13 +82,12 @@ logo img{
 }
 
 front{
-	position:absolute;
+	position:fixed;
 	display:block;
 	top:0px;
 	left:0px;
 	bottom:0px;
 	background: #111;
-	height:100vh;
 	width:3vw;
 	border:none;
 	color:white;
@@ -280,7 +283,7 @@ grid{
 }
 
 grid img{
-	width: 10vw;
+	width: 17.5vw;
 }
 
 box{
