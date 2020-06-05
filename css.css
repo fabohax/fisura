@@ -145,8 +145,8 @@ face{
 	position:absolute;
 	display:block;
 	top:0vh;
-	left:30vw;
-	height:100vh;
+	left:0vw;
+	height:200vh;
 	width:100vw;
 	z-index:50;
 	transform: rotate(-90deg) translateX(-100vh);
@@ -161,7 +161,8 @@ mouth{
 	display:flex;
 	flex-direction:row;
 	height:100vh;
-	width:380vw;
+	width:500vw;
+	padding-left: 30vw;
 	transform: rotate(90deg) translateY(-100vh);
 	transform-origin:top left;
 	overflow-y:scroll; 
@@ -170,7 +171,7 @@ mouth{
 
 slide{
 	height:100vh;
-	width:50vw;
+	width:66vw;
 }
 
 slide img{
