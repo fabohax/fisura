@@ -185,6 +185,25 @@ slide a{
 	font-size:1.75vh;
 }
 
+mouth h1{
+	position: absolute;
+	display: block;
+	top:50vh;
+	right:20vw;
+	margin-top:-40px;
+	padding: 20px;
+	vertical-align: middle;
+	text-align: center;
+	border:1px solid #000;
+	border-radius: 100px;
+	width:38px;
+	height:38px;
+}
+
+mouth h1:hover{
+	background: #000;
+	color:#fff;
+}
 
 square{
 	position:relative;
