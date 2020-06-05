@@ -1,7 +1,7 @@
 @keyframes toWhite {
   0% {background: #000;opacity:0%}
   50%{background: #000;opacity:50%}
-  99% {backgroound:#000;}
+  99% {background:#000;}
   100% {background: #fff;opacity: 100%}
 }
 
@@ -218,6 +218,10 @@ bio{
 	text-align: justify;
 	text-justify: auto;
 	user-select:text;
+	-webkit-scrollbar-thumb {
+  		background: #fff;
+  		border:1px solid #fff;
+	}
 }
 
 bio img{
