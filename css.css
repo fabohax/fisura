@@ -1,8 +1,7 @@
 @keyframes toWhite {
   0% {background: #000;opacity:0%}
   50%{background: #000;opacity:50%}
-  99% {background:#000;}
-  100% {background: #fff;opacity: 100%}
+  100% {background: transparent;opacity: 100%}
 }
 
 @keyframes toBlack {
@@ -70,13 +69,13 @@ a{
 logo{
 	position:absolute;
 	display:block;
-	top:-3%;
-	left:6%;
+	top:0vh;
+	left:6vw;
 	z-index:1000;
 }
 
 logo img{
-	width:9vw;
+	width:21vh;
 	filter: invert(0);
 }
 
@@ -87,7 +86,7 @@ front{
 	left:0px;
 	bottom:0px;
 	background: #111;
-	width:3vw;
+	width:6vh;
 	border:none;
 	color:white;
 	z-index:100;
@@ -99,10 +98,10 @@ front a{
 front a span{
 	position: relative;
 	display:block;
-	left:1vw;
+	left:2vh;
 	color:#fff;
-	height:3vw;
-	width: 3vw;
+	height:3vh;
+	width: 3vh;
 	transform:rotate(-90deg);
 	font-family: Roboto;
 	font-size:1.33vh;
@@ -142,11 +141,11 @@ front a span{
 }
 
 face{
-	position:absolute;
+	position:fixed;
 	display:block;
-	top:0vh;
+	top:25vh;
 	left:0vw;
-	height:200vh;
+	height:auto;
 	width:100vw;
 	z-index:50;
 	transform: rotate(-90deg) translateX(-100vh);
@@ -160,25 +159,26 @@ mouth{
 	left:0vw;
 	display:flex;
 	flex-direction:row;
-	height:100vh;
-	width:500vw;
-	padding-left: 30vw;
+	height:100vw;
+	width:700vh;
 	transform: rotate(90deg) translateY(-100vh);
 	transform-origin:top left;
 	overflow-y:scroll; 
 	z-index:10;
+	overflow: hidden;
 }
 
 slide{
+	position: relative;
+	display: block;
 	height:100vh;
-	width:66vw;
+	padding-left:15vh; 
 }
 
 slide img{
 	width: auto;
-	max-width:50vw;
 	height: 50vh;
-	padding:25vh 0vh 3vh;
+	padding:0vh 0vh 3vh;
 }
 
 slide a{
@@ -186,18 +186,19 @@ slide a{
 }
 
 mouth h1{
-	position: absolute;
+	position: relative;
 	display: block;
-	top:50vh;
-	right:20vw;
-	margin-top:-40px;
+	top:25vh;
 	padding: 20px;
 	vertical-align: middle;
 	text-align: center;
 	border:1px solid #000;
-	border-radius: 100px;
-	width:38px;
-	height:38px;
+	border-radius: 100vh;
+	width:10vh;
+	height:10vh;
+	margin: 10vh;
+	font-size: 10vh;
+	line-height: 10vh;
 }
 
 mouth h1:hover{
@@ -313,4 +314,14 @@ box{
 	position: relative;
 	display: inline-block;
 	padding:8vw;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background: #00f;
+  }
+
+  front{
+
+  }
 }
