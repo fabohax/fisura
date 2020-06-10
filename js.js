@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
     $("#contacto").click(function(){
-	    console.log("clicked");
 	    $("front").animate({
 		    	width: '100%'
 		  	}
@@ -17,10 +16,35 @@ $(document).ready(function(){
 	    })
   	});
 
-    $('img')
-    .wrap('<span style="display:inline-block"></span>')
-    .css('display', 'block')
-    .parent()
-    .zoom();
+
+  	var i;
+  	for (var i = Things.length - 1; i < 8; i--) {
+  		Things[i]
+  	}
+
+
+	$("#1").animate({opacity: '1'}, "slow");
+	$("#1").animate({opacity: '1'}, "slow");
+
+	$("#2").animate({opacity: '1'}, "slow");
+	$("#2").animate({opacity: '0'}, "slow");
+
+	$("#3").animate({opacity: '1'}, "slow");
+	$("#3").animate({opacity: '0'}, "slow");
+
+	$("#4").animate({opacity: '1'}, "slow");
+	$("#4").animate({opacity: '0'}, "slow");
+
+	$("#5").animate({opacity: '1'}, "slow");
+	$("#5").animate({opacity: '0'}, "slow");
+
+	$("#6").animate({opacity: '1'}, "slow");
+	$("#6").animate({opacity: '0'}, "slow");
+
+	$("#7").animate({opacity: '1'}, "slow");
+	$("#7").animate({opacity: '0'}, "slow");
+
 
 });
+
+    

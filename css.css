@@ -6,36 +6,34 @@
 
 @keyframes toBlack {
   0% {background: #fff;}
-  100% {background: #000;}
+  100% {background: #111;}
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 1.5vw;
+  width: 0.5vw;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
   border:transparent;
-  border-right:#000;
+  border-right:#111;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000;
-  border:1px solid #000;
+  background: #111;
+  border:1px solid #111;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #000;
+  background: #111;
 }
 
 body{
 	position:relative;
-	padding:0px;
-	margin:0px;
 	overflow:hidden;
 	font-family: 'Roboto', sans-serif;
 	animation: toWhite 3s ease-in forwards;
@@ -60,14 +58,14 @@ body{
 }
 
 a{
-	color:#000;
+	color:#111;
 	text-decoration:none;
 }
 
 
 
 logo{
-	position:absolute;
+	position:fixed;
 	display:block;
 	top:0vh;
 	left:6vw;
@@ -113,72 +111,54 @@ front a span{
 #inicio{
 	position: absolute;
 	display: flex;
-	top:15vh;
+	top:22.5vh;
 }
 
 #obras{
 	position: absolute;
 	display: flex;
-	top:32.5vh;
+	top:35vh;
 }
 
 #artistas{
 	position: absolute;
 	display: flex;
-	top:47.5vh;
+	top:52.5vh;
 }
 
 #nosotros{
 	position: absolute;
 	display: flex;
-	top:62.5vh;
+	top:70vh;
 }
 
 #contacto{
 	position: absolute;	
 	display: flex;
-	top:90vh;
-}
-
-face{
-	position:fixed;
-	display:block;
-	top:25vh;
-	left:0vw;
-	height:auto;
-	width:100vw;
-	z-index:50;
-	transform: rotate(-90deg) translateX(-100vh);
-	transform-origin:top left;
-	overflow-y:scroll;
-	overflow-x:hidden;
+	top:87.5vh;
 }
 
 mouth{
 	position:relative;
-	left:0vw;
-	display:flex;
-	flex-direction:row;
-	height:100vw;
-	width:700vh;
-	transform: rotate(90deg) translateY(-100vh);
-	transform-origin:top left;
-	overflow-y:scroll; 
-	z-index:10;
-	overflow: hidden;
+	display:block;
 }
 
-slide{
-	position: relative;
+mouth img{
+	position: absolute;
 	display: block;
-	height:100vh;
-	padding-left:15vh; 
-}
-
-slide img{
 	width: auto;
 	height: 50vh;
-	padding:0vh 0vh 3vh;
+	padding:25vh 0vh 0vh;
+	opacity: 1;
+	text-align: center;
+}
+
+#1{
+	z-index: 1000;
+}
+
+#2{
+	z-index: 900;
 }
 
 slide a{
@@ -206,13 +186,20 @@ mouth h1:hover{
 	color:#fff;
 }
 
+boxes{
+	position: relative;
+	display: block;
+	padding: 25vh;
+	text-align: center;
+}
+
 square{
 	position:relative;
-	display:block;
-	top:33vh;
+	display: inline-block;
+	top:0vh;
 	height:50vh;
-	margin-right:25vh;
-	font-size: 1.5vh;
+	margin:0vh;
+	font-size: 2vh;
 	overflow: hidden;
 }
 
@@ -220,7 +207,12 @@ square img{
 	position: relative;
 	display: block;
 	height:33vh;
+	margin: 2vh;
 	overflow: hidden;
+}
+
+square a span{
+	text-align: left;
 }
 
 bio{
@@ -230,7 +222,7 @@ bio{
 	left:25vw;
 	bottom:20vh;
 	width: 50vh;
-	padding: 20vh;
+	padding:5vh 20vh;
 	line-height: 3.3vh;
 	font-size: 1.75vh;
 	overflow-x:hidden;
@@ -286,8 +278,9 @@ art{
 }
 
 art img{
-	height:50vh;
+	width:50vh;
 }
+
 
 state{
 	position: relative;
@@ -300,21 +293,25 @@ obra{
 }
 
 grid{
-	position: absolute;
+	position: relative;
 	display: block;
+	top:18vh;
 	columns: 3;
 	overflow-y:scroll;
+	padding: 6vh 1vh 6vh 15vh;
 }
 
 grid img{
-	width: 17.5vw;
+	width: 27vw;
 }
 
 box{
 	position: relative;
 	display: inline-block;
-	padding:8vw;
+	padding:0vw 0vh 15vh;
 }
+
+
 
 @media only screen and (max-width: 400px) {
   body {
