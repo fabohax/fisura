@@ -60,10 +60,15 @@ $(document).ready(function(){
 	  	$("mouth img#7").animate({opacity: '1'}, t1);
 	  	$("mouth img#7").animate({opacity: '0',display:'none'}, t1);
 
+	  	$("mouth img#8").animate({opacity: '0',display:'block'}, t1*23);
+	  	$("mouth img#8").animate({opacity: '1'}, t1);
+	  	$("mouth img#8").animate({opacity: '1'}, t1);
+	  	$("mouth img#8").animate({opacity: '0',display:'none'}, t1);
+
   	}
 
 
-	 setInterval(loop(),t1*4);
+	 loop();
 
 });
 
