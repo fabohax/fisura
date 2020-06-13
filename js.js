@@ -25,50 +25,21 @@ $(document).ready(function(){
   		t6 = t1*6;
 
 
-  		$("mouth img#1").animate({opacity: '0',display:'block'}, t1);
-	  	$("mouth img#1").animate({opacity: '1'}, t2);
-	  	$("mouth img#1").animate({opacity: '1'}, t2);
-	  	$("mouth img#1").animate({opacity: '0',display:'none'}, t1);
-
-	  	$("mouth img#2").animate({opacity: '0',display:'block'}, t1*6);
-	  	$("mouth img#2").animate({opacity: '1'}, t2);
-	  	$("mouth img#2").animate({opacity: '1'}, t2);
-	  	$("mouth img#2").animate({opacity: '0',display:'none'}, t1);
-
-	  	$("mouth img#3").animate({opacity: '0',display:'block'}, t1*11);
-	  	$("mouth img#3").animate({opacity: '1'}, t2);
-	  	$("mouth img#3").animate({opacity: '1'}, t2);
-	  	$("mouth img#3").animate({opacity: '0',display:'none'}, t1);
-
-	  	$("mouth img#4").animate({opacity: '0',display:'block'}, t1*16);
-	  	$("mouth img#4").animate({opacity: '1'}, t2);
-	  	$("mouth img#4").animate({opacity: '1'}, t2);
-	  	$("mouth img#4").animate({opacity: '0',display:'none'}, t1);
-
-	  	$("mouth img#5").animate({opacity: '0',display:'block'}, t1*21);
-	  	$("mouth img#5").animate({opacity: '1'}, t2);
-	  	$("mouth img#5").animate({opacity: '1'}, t2);
-	  	$("mouth img#5").animate({opacity: '0',display:'none'}, t1);
-
-	  	$("mouth img#6").animate({opacity: '0',display:'block'}, t1*26);
-	  	$("mouth img#6").animate({opacity: '1'}, t2);
-	  	$("mouth img#6").animate({opacity: '1'}, t2);
-	  	$("mouth img#6").animate({opacity: '0',display:'none'}, t1);
-
-	  	$("mouth img#7").animate({opacity: '0',display:'block'}, t1*31);
-	  	$("mouth img#7").animate({opacity: '1'}, t2);
-	  	$("mouth img#7").animate({opacity: '1'}, t2);
-	  	$("mouth img#7").animate({opacity: '0',display:'none'}, t1);
-
-	  	$("mouth img#8").animate({opacity: '0',display:'block'}, t1*36);
-	  	$("mouth img#8").animate({opacity: '1'}, t2);
-	  	$("mouth img#8").animate({opacity: '1'}, t2);
-	  	$("mouth img#8").animate({opacity: '0',display:'none'}, t1);
-
-  	}
+  		$('mouth img#1').fadeIn(t1).delay(t2).fadeOut(t1);
+    	$('mouth img#2').delay(t1*4).fadeIn(t1).delay(t2).fadeOut(t1);
+    	$('mouth img#3').delay(t1*8).fadeIn(t1).delay(t2).fadeOut(t1);
+    	$('mouth img#4').delay(t1*12).fadeIn(t1).delay(t2).fadeOut(t1);
+    	$('mouth img#5').delay(t1*16).fadeIn(t1).delay(t2).fadeOut(t1);
+    	$('mouth img#6').delay(t1*20).fadeIn(t1).delay(t2).fadeOut(t1);
+    	$('mouth img#7').delay(t1*24).fadeIn(t1).delay(t2).fadeOut(t1);
+    	$('mouth img#8').delay(t1*28).fadeIn(t1).delay(t2).fadeOut(t1);
 
 
-	 loop();
+  	};
+
+  	setInterval(
+  		loop()
+  		);
 
 });
 

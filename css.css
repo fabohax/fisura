@@ -147,12 +147,12 @@ mouth{
 
 mouth img{
 	position: absolute;
-	display: flex;
+	display: none;
 	margin-left: auto;
   	margin-right: auto;
 	width: auto;
 	height: 50vh;
-	opacity: 0;
+	opacity: 1;
 	text-align: center;
 	z-index:1000;
 	top: 50%;
