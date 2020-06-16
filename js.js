@@ -39,11 +39,7 @@ $(document).ready(function(){
 
   	var looper = setInterval(loop, 48000);
 
-    $('img')
-    .wrap('<span style="display:inline-block"></span>')
-    .css('display', 'block')
-    .parent()
-    .zoom();
+    
 
 });
 

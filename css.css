@@ -159,6 +159,7 @@ mouth img{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, 0%);
+    background-image: url("loader.gif");
 }
 
 slide a{
@@ -367,5 +368,12 @@ box{
 	}
 }
 
+.loader{
+	text-align: center;
+	margin:0 auto;
+	width: 20vw;
+}
 
+@keyframes loader{
+	0
 }
