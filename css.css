@@ -242,7 +242,10 @@ bio{
 bio img{
 	position: relative;
 	display: block;
-	width:30vw;
+	width:100%;
+	min-width: 330px;
+	max-width: 500px;
+	height:auto;
 }
 
 bio a span h2{
@@ -319,41 +322,48 @@ box{
 
 @media only screen and (max-width: 600px) {
   art{
-	position: absolute;
-	display:block;
-	top:20vh;
-	left:50vw;
-	bottom:20vh;
-	width: 75vw;
-	padding: 0vh 0vw;
-	line-height: 3.3vh;
-	font-size: 1.75vh;
-	transform: translate(-35vw,0vw);
-	overflow-x:hidden;
-	overflow-y:scroll;
-	text-align: justify;
-	text-justify: auto;
+		position: absolute;
+		display:block;
+		top:20vh;
+		left:50vw;
+		bottom:20vh;
+		width: 75vw;
+		padding: 0vh 0vw;
+		line-height: 3.3vh;
+		font-size: 1.75vh;
+		transform: translate(-35vw,0vw);
+		overflow-x:hidden;
+		overflow-y:scroll;
+		text-align: justify;
+		text-justify: auto;
 	}
 
 	bio{
-	position: absolute;
-	display:block;
-	top:20vh;
-	left:50vw;
-	bottom:20vh;
-    transform: translate(-50%, 0%);
-	width: 50vw;
-	padding:5vh 20vh;
-	line-height: 3.3vh;
-	font-size: 1.75vh;
-	overflow-x:hidden;
-	overflow-y:scroll;
-	text-align: justify;
-	text-justify: auto;
-	user-select:text;
-	-webkit-scrollbar-thumb {
-  		background: #fff;
-  		border:1px solid #fff;
+		position: absolute;
+		display:block;
+		top:20vh;
+		left:50vw;
+		bottom:20vh;
+	    transform: translate(-50%, 0%);
+		width: 75vw;
+		padding:5vh 5vh;
+		line-height: 3.3vh;
+		font-size: 1.75vh;
+		overflow-x:hidden;
+		overflow-y:scroll;
+		text-align: justify;
+		text-justify: auto;
+		user-select:text;
+		-webkit-scrollbar-thumb {
+	  		background: #fff;
+	  		border:1px solid #fff;
+	}
+
+	bio img{
+		position: relative;
+		display: block;
+		width:200px;
+		height: auto;
 	}
 }
 
