@@ -270,9 +270,9 @@ art{
 	top:20vh;
 	left:50vw;
 	bottom:20vh;
-	width: 50vw;
-	transform: translate(-35vw,0vw);
-	padding: 0vh 10vh;
+	width: 30vw;
+	transform: translate(-25vw,0vw);
+	padding: 0vh 20vh;
 	line-height: 3.3vh;
 	font-size: 1.75vh;
 	overflow-x:hidden;
