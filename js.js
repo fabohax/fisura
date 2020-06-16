@@ -20,9 +20,8 @@ $(document).ready(function(){
 
   		t1 = 1500;
   		t2 = t1*2;
-  		t3 = t1*3;
-  		t4 = t1*4;
-  		t6 = t1*6;
+
+  		t3 = t1*32;
 
 
   		$('mouth img#1').fadeIn(t1).delay(t2).fadeOut(t1);
@@ -34,12 +33,9 @@ $(document).ready(function(){
     	$('mouth img#7').delay(t1*24).fadeIn(t1).delay(t2).fadeOut(t1);
     	$('mouth img#8').delay(t1*28).fadeIn(t1).delay(t2).fadeOut(t1);
 
-
   	};
 
-  	setInterval(
-  		loop()
-  		);
+  	var looper = setInterval(loop, 48000);
 
 });
 

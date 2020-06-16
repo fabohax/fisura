@@ -87,7 +87,7 @@ front{
 	width:6vh;
 	border:none;
 	color:white;
-	z-index:100;
+	z-index:10000;
 }
 
 front a{
@@ -189,7 +189,7 @@ mouth h1:hover{
 boxes{
 	position: relative;
 	display: block;
-	padding: 25vh;
+	padding: 25vh 3.5vh 0vh;
 	text-align: center;
 }
 
@@ -219,9 +219,10 @@ bio{
 	position: absolute;
 	display:block;
 	top:20vh;
-	left:25vw;
+	left:50vw;
 	bottom:20vh;
-	width: 50vh;
+    transform: translate(-50%, 0%);
+	width: 50vw;
 	padding:5vh 20vh;
 	line-height: 3.3vh;
 	font-size: 1.75vh;
@@ -239,7 +240,7 @@ bio{
 bio img{
 	position: relative;
 	display: block;
-	width:50vh;
+	width:50vw;
 }
 
 bio a span h2{
@@ -298,7 +299,7 @@ grid{
 	top:18vh;
 	columns: 3;
 	overflow-y:scroll;
-	padding: 6vh 1vh 6vh 15vh;
+	padding: 5vh 0vh 0vh 7vh;
 }
 
 grid img{
