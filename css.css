@@ -270,9 +270,9 @@ art{
 	top:20vh;
 	left:50vw;
 	bottom:20vh;
-	width: 75vw;
-	transform: translate(-50vw,0vw);
-	padding: 0vh 6vh;
+	width: 50vw;
+	transform: translate(-35vw,0vw);
+	padding: 0vh 10vh;
 	line-height: 3.3vh;
 	font-size: 1.75vh;
 	overflow-x:hidden;
@@ -318,5 +318,20 @@ box{
 
 
 @media only screen and (max-width: 500px) {
-  
+  art{
+	position: absolute;
+	display:block;
+	top:20vh;
+	left:50vw;
+	bottom:20vh;
+	width: 75vw;
+	padding: 0vh 0vw;
+	line-height: 3.3vh;
+	font-size: 1.75vh;
+	transform: translate(-35vw,0vw);
+	overflow-x:hidden;
+	overflow-y:scroll;
+	text-align: justify;
+	text-justify: auto;
+	}
 }
