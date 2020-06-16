@@ -37,7 +37,7 @@ $(document).ready(function(){
 
     loop();
 
-  	var looper = setInterval(loop, 48000);
+  	var looper = setInterval(loop, 49500);
 
     
 

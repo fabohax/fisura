@@ -139,27 +139,22 @@ front a span{
 }
 
 mouth{
-	position:relative;
+	position:absolute;
 	display:block;
-	top:25vh;
+	top:50vh;
+	left:50vw;
 	text-align: center;
 }
 
 mouth img{
 	position: absolute;
 	display: none;
-	margin-left: auto;
-  	margin-right: auto;
 	width: auto;
 	height: 50vh;
 	opacity: 1;
 	text-align: center;
 	z-index:1000;
-	top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0%);
-    background-image: url("loader.gif");
+    transform: translate(-50%, -50%);
 }
 
 slide a{
@@ -321,7 +316,7 @@ box{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   art{
 		position: absolute;
 		display:block;
@@ -343,11 +338,11 @@ box{
 		position: absolute;
 		display:block;
 		top:20vh;
-		left:50vw;
+		left:52.5vw;
 		bottom:20vh;
 	    transform: translate(-50%, 0%);
 		width: 75vw;
-		padding:5vh 5vh;
+		padding:5vh 7vw;
 		line-height: 3.3vh;
 		font-size: 1.75vh;
 		overflow-x:hidden;
@@ -368,12 +363,27 @@ box{
 	}
 }
 
-.loader{
-	text-align: center;
-	margin:0 auto;
-	width: 20vw;
-}
 
-@keyframes loader{
-	0
+@media only screen and (max-width: 800px) {
+
+	mouth{
+		position:relative;
+		display:block;
+		top:50vh;
+		left:0vw;
+		text-align: center;
+	}
+
+	mouth img{
+		position: absolute;
+		display: none;
+		width: auto;
+		height: auto;
+		max-width: 70vw;
+		opacity: 1;
+		text-align: center;
+		z-index:1000;
+	    transform: translate(-42.5%, -50%);
+	}
+
 }
