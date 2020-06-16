@@ -35,8 +35,9 @@ $(document).ready(function(){
 
   	};
 
+    loop();
 
-  	var looper = setInterval(loop(), 49500);
+  	var looper = window.setInterval(loop, 49500);
 
     
 
