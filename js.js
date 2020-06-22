@@ -39,7 +39,21 @@ $(document).ready(function(){
 
   	var looper = window.setInterval(loop, 49500);
 
-    
+    $('list span').mouseover(function(){
+      $(this).css({
+        textDecoration: "underline",
+        fontWeight: "bolder",
+        cursor: "pointer"
+      });
+    });
+
+    $('list span').mouseout(function(){
+      $(this).css({
+        textDecoration: "none",
+        fontWeight: "normal"
+
+      });
+    });
 
 });
 
