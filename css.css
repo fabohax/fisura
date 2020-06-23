@@ -304,7 +304,7 @@ grid{
 
 box{
 	position: absolute;
-	display: block;
+	display: none;
 	transform: translate(0%,-50%);
 }
 
@@ -316,7 +316,7 @@ box img{
 list{
 	position: absolute;
 	display: block;
-	padding: 20vh 0vw 0vh;
+	padding: 15vh 0vw 0vh;
 	z-index:100;
 }
 
