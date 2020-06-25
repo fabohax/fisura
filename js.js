@@ -55,13 +55,24 @@ $(document).ready(function(){
       });
     });
 
+
+
     $("#1").css("display","block");
+    $("#f1").css({
+        display: "block"
+      });
 
     $("#a1").mouseover(function(){
       $("box").css({
         display: "none"
       });
       $("#1").css({
+        display: "block"
+      });
+      $("arrow img").css({
+        display: "none"
+      });
+      $("#f1").css({
         display: "block"
       });
     });
@@ -73,6 +84,12 @@ $(document).ready(function(){
       $("#2").css({
         display: "block"
       });
+      $("arrow img").css({
+        display: "none"
+      });
+      $("#f2").css({
+        display: "block"
+      });
     });
 
     $("#a3").mouseover(function(){
@@ -80,6 +97,12 @@ $(document).ready(function(){
         display: "none"
       });
       $("#3").css({
+        display: "block"
+      });
+      $("arrow img").css({
+        display: "none"
+      });
+      $("#f3").css({
         display: "block"
       });
     });
@@ -91,6 +114,12 @@ $(document).ready(function(){
       $("#4").css({
         display: "block"
       });
+      $("arrow img").css({
+        display: "none"
+      });
+      $("#f4").css({
+        display: "block"
+      });
     });
 
     $("#a5").mouseover(function(){
@@ -98,6 +127,12 @@ $(document).ready(function(){
         display: "none"
       });
       $("#5").css({
+        display: "block"
+      });
+      $("arrow img").css({
+        display: "none"
+      });
+      $("#f5").css({
         display: "block"
       });
     });
@@ -109,6 +144,12 @@ $(document).ready(function(){
       $("#6").css({
         display: "block"
       });
+      $("arrow img").css({
+        display: "none"
+      });
+      $("#f6").css({
+        display: "block"
+      });
     });
 
     $("#a7").mouseover(function(){
@@ -118,6 +159,12 @@ $(document).ready(function(){
       $("#7").css({
         display: "block"
       });
+      $("arrow img").css({
+        display: "none"
+      });
+      $("#f7").css({
+        display: "block"
+      });
     });
 
     $("#a8").mouseover(function(){
@@ -125,6 +172,12 @@ $(document).ready(function(){
         display: "none"
       });
       $("#8").css({
+        display: "block"
+      });
+      $("arrow img").css({
+        display: "none"
+      });
+      $("#f8").css({
         display: "block"
       });
     });
