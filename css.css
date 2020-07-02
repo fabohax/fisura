@@ -298,52 +298,70 @@ obra{
 grid{
 	position: absolute;
 	display: block;
-	top:50vh;
-	left:36vw;
+	top:0vh;
+	bottom:0vh;
 }
 
 box{
 	position: absolute;
+	left:33vw;
 	display: none;
-	transform: translate(0%,-55%);
+	transform: translate(0%,-50%);
 	font-size: 1.5vh;
 }
 
+box item{
+	position: absolute;
+	left: 0vw;
+}
+
 box item img{
-	max-width: 60vw;
-	max-height: 87.5vh;
+	max-width: 76.6vw;
+	max-height: 97.3vh;
 }
 
-arrow{
-	position: fixed;
+back{
+	position: absolute;
 	display: block;
-	top:47.5vh;
-	right:0.5vw;
-}
-
-arrow img{
-	display: none;
-	height: 5vh;
-	background: #fff;
-	opacity: 0.75;
+	top:40vh;
+	height: 3.3vh;
+	width:3.3vh;
+	opacity: 0.5;
+	padding-left:-3.3vh;
+	z-index:1000;
 	cursor: pointer;
 }
 
-arrow img:hover{
-	opacity: 1;
+back img{
+	height: 3.3vh;
+}
+
+next{
+	position: absolute;
+	display: block;
+	top:43.3vh;
+	height: 3.3vh;
+	width: 3.3vh;
+	transform: rotate(180deg);
+	opacity: 0.5;
+	z-index:1000;
+	cursor: pointer;
+}
+
+next img{
+	height: 3.3vh;
 }
 
 file{
 	position: fixed;
 	display: block;
 	bottom: 0vh;
-	left:36vw;
-	right:0vw;
+	left:8vw;
 	line-height: 2vh;
 	text-align: left;
 	font-size: 1.8vh;
 	z-index: 1000;
-	padding: 3vh;
+	padding: 1vh;
 }
 
 file a{
@@ -356,22 +374,21 @@ box item a{
 }
 
 list{
-	position: absolute;
+	position: relative;
 	display: block;
-	top:0px;
-	bottom:0px;
-	margin: 0vh;
-	padding: 15vh 0vw 0vh;
+	top:12vw;
+	left:8.25vw;
+	width: 30vh;
 	z-index:100;
 	font-family: 'Inter', sans-serif;
 	font-weight: normal;
-	text-align: right;
+	text-align: left;
 }
 
 list span{
 	position: relative;
 	display: block;
-	margin:5vh 21vw;
+	margin:1vh 0vh;
 	font-size: 1.8vh;
 	text-transform: uppercase;
 }

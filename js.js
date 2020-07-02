@@ -42,7 +42,7 @@ $(document).ready(function(){
     $('list span').mouseover(function(){
       $(this).css({
         textDecoration: "underline",
-        fontWeight: "bolder",
+        fontWeight: "bold",
         cursor: "pointer"
       });
     });
@@ -180,6 +180,15 @@ $(document).ready(function(){
       $("#f8").css({
         display: "block"
       });
+    });
+
+    $("box item").eq(1).css({
+      left:"62.5vw",
+      opacity:"0.3"
+    });
+
+    $("back").mouseover(function(){
+      $(this).css("opacity","1");
     });
 
 });
