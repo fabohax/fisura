@@ -326,7 +326,7 @@ back{
 	position: fixed;
 	display: block;
 	top:46.6vh;
-	left:29vw;
+	left:27.5vw;
 	height: 3.3vh;
 	width:3.3vh;
 	opacity: 0.5;
@@ -393,6 +393,7 @@ list{
 list span{
 	position: relative;
 	display: block;
+	width: auto;
 	margin:1vh 0vh;
 	font-size: 1.8vh;
 	text-transform: uppercase;
@@ -408,6 +409,11 @@ list span{
 	background: #fff;
 	z-index: 50;
 	animation: toWhite 3s ease-in forwards;
+}
+
+arrow{
+	position:relative;
+	display: none;
 }
 
 
