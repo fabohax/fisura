@@ -69,9 +69,6 @@ $(document).ready(function(){
       $("#1").css({
         display: "block"
       });
-      $("arrow img").css({
-        display: "none"
-      });
       $("#f1").css({
         display: "block"
       });
@@ -83,9 +80,6 @@ $(document).ready(function(){
       });
       $("#2").css({
         display: "block"
-      });
-      $("arrow img").css({
-        display: "none"
       });
       $("#f2").css({
         display: "block"
@@ -99,9 +93,6 @@ $(document).ready(function(){
       $("#3").css({
         display: "block"
       });
-      $("arrow img").css({
-        display: "none"
-      });
       $("#f3").css({
         display: "block"
       });
@@ -113,9 +104,6 @@ $(document).ready(function(){
       });
       $("#4").css({
         display: "block"
-      });
-      $("arrow img").css({
-        display: "none"
       });
       $("#f4").css({
         display: "block"
@@ -129,9 +117,6 @@ $(document).ready(function(){
       $("#5").css({
         display: "block"
       });
-      $("arrow img").css({
-        display: "none"
-      });
       $("#f5").css({
         display: "block"
       });
@@ -144,9 +129,6 @@ $(document).ready(function(){
       $("#6").css({
         display: "block"
       });
-      $("arrow img").css({
-        display: "none"
-      });
       $("#f6").css({
         display: "block"
       });
@@ -158,9 +140,6 @@ $(document).ready(function(){
       });
       $("#7").css({
         display: "block"
-      });
-      $("arrow img").css({
-        display: "none"
       });
       $("#f7").css({
         display: "block"
@@ -182,13 +161,53 @@ $(document).ready(function(){
       });
     });
 
+    var wimg = 76.6;
+
     $("box item").eq(1).css({
-      left:"62.5vw",
-      opacity:"0.3"
+      left:"76.6vw"
+    });
+    $("box item").eq(2).css({
+      left:(wimg*2)+"vw"
+    });
+    $("box item").eq(3).css({
+      left:(wimg*3)+"vw"
+    });
+    $("box item").eq(4).css({
+      left:(wimg*4)+"vw"
+    });
+    $("box item").eq(5).css({
+      left:(wimg*5)+"vw"
+    });
+    $("box item").eq(6).css({
+      left:(wimg*6)+"vw"
+    });
+    $("box item").eq(7).css({
+      left:(wimg*7)+"vw"
+    });
+    $("box item").eq(8).css({
+      left:(wimg*8)+"vw"
+    });
+    $("box item").eq(9).css({
+      left:(wimg*9)+"vw"
+    });
+    $("box item").eq(10).css({
+      left:(wimg*10)+"vw"
     });
 
     $("back").mouseover(function(){
       $(this).css("opacity","1");
+    });
+
+    $("next").mouseover(function(){
+      $(this).css("opacity","1");
+    });
+
+    $("next").click(function(){
+      $("#1").animate({left:"-=76.6vw"});
+    });
+
+    $("back").click(function(){
+      $("#1").animate({left:"+=76.6vw"});
     });
 
 });

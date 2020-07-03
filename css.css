@@ -1,7 +1,7 @@
 @keyframes toWhite {
   0% {background: #000;opacity:0%}
   50%{background: #000;opacity:50%}
-  100% {background: transparent;opacity: 100%}
+  100% {background: #fff;opacity: 100%}
 }
 
 @keyframes toBlack {
@@ -300,6 +300,7 @@ grid{
 	display: block;
 	top:0vh;
 	bottom:0vh;
+	z-index:25;
 }
 
 box{
@@ -312,7 +313,8 @@ box{
 
 box item{
 	position: absolute;
-	left: 0vw;
+	left:0vw;
+	margin-right: 6vw;
 }
 
 box item img{
@@ -321,9 +323,10 @@ box item img{
 }
 
 back{
-	position: absolute;
+	position: fixed;
 	display: block;
-	top:40vh;
+	top:46.6vh;
+	left:29vw;
 	height: 3.3vh;
 	width:3.3vh;
 	opacity: 0.5;
@@ -337,9 +340,10 @@ back img{
 }
 
 next{
-	position: absolute;
+	position: fixed;
 	display: block;
-	top:43.3vh;
+	top:46.6vh;
+	left:30vw;
 	height: 3.3vh;
 	width: 3.3vh;
 	transform: rotate(180deg);
@@ -357,6 +361,7 @@ file{
 	display: block;
 	bottom: 0vh;
 	left:8vw;
+	width: 20vw;
 	line-height: 2vh;
 	text-align: left;
 	font-size: 1.8vh;
@@ -393,6 +398,17 @@ list span{
 	text-transform: uppercase;
 }
 
+.degrade{
+	position: fixed;
+	display: block;
+	top: 0vh;
+	left:0vh;
+	bottom:0vh;
+	width: 30vw;
+	background: #fff;
+	z-index: 50;
+	animation: toWhite 3s ease-in forwards;
+}
 
 
 @media only screen and (max-width: 640px) {
