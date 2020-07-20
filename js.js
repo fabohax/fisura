@@ -95,6 +95,12 @@ $(document).ready(function(){
       $(".s13").animate({
         right:(wimg*12)+"vw"
       });
+      $(".s14").animate({
+        right:(wimg*13)+"vw"
+      });
+      $(".s15").animate({
+        right:(wimg*14)+"vw"
+      });
     }
 
     deploy();
@@ -247,7 +253,7 @@ $(document).ready(function(){
       $("arrow").css({
         display: "none"
       });
-      $("#f10").css({
+      $("#f9").css({
         display: "block"
       });
       deploy();
@@ -286,7 +292,59 @@ $(document).ready(function(){
     });
 
     
+     //Firefox
+    $('back').bind('DOMMouseScroll', function(e){
+       if(e.originalEvent.detail > 0) {
+           //scroll down
+           $(this).parent().next().animate({right:"+=76.6vw"});
+       }else {
+           //scroll up
+           $(this).parent().next().animate({right:"-=76.6vw"});
+       }
 
+       //prevent page fom scrolling
+       return false;
+    });
+
+    $('next').bind('DOMMouseScroll', function(e){
+       if(e.originalEvent.detail > 0) {
+           //scroll down
+           $(this).parent().next().animate({right:"+=76.6vw"});
+       }else {
+           //scroll up
+           $(this).parent().next().animate({right:"-=76.6vw"});
+       }
+
+       //prevent page fom scrolling
+       return false;
+    });
+
+    //IE, Opera, Safari
+    $('back').bind('mousewheel', function(e){
+       if(e.originalEvent.wheelDelta < 0) {
+           //scroll down
+           $(this).parent().next().animate({right:"+=76.6vw"});
+       }else {
+           //scroll up
+           $(this).parent().next().animate({right:"-=76.6vw"});
+       }
+
+       //prevent page fom scrolling
+       return false;
+    });
+
+    $('next').bind('mousewheel', function(e){
+       if(e.originalEvent.wheelDelta < 0) {
+           //scroll down
+           $(this).parent().next().animate({right:"+=76.6vw"});
+       }else {
+           //scroll up
+           $(this).parent().next().animate({right:"-=76.6vw"});
+       }
+
+       //prevent page fom scrolling
+       return false;
+    });
 
    
 
