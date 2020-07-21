@@ -337,10 +337,10 @@ back{
 	position: fixed;
 	display: block;
 	top:0vh;
-	left:27zvw;
+	left:27vw;
 	height: 100vh;
-	width:35vw;
-	z-index:10000;
+	width:50vw;
+	z-index:9000;
 	cursor: pointer;
 }
 
@@ -354,7 +354,7 @@ next{
 	top:0vh;
 	right:0vw;
 	height:100vh;
-	width:35vw;
+	width:50vw;
 	z-index:10000;
 	cursor: pointer;
 }
@@ -427,6 +427,10 @@ arrow{
 chat{
 	position: absolute;
 	display: none;
+}
+
+.loading {
+	background: transparent url('img/loading.gif') center no-repeat;
 }
 
 
