@@ -120,7 +120,8 @@ $(document).ready(function(){
         display: "none"
       });
       $("#1").css({
-        display: "block"
+        display: "block",
+        right:"0px"
       });
       $("arrow").css({
         display: "none"
@@ -136,7 +137,8 @@ $(document).ready(function(){
         display: "none"
       });
       $("#2").css({
-        display: "block"
+        display: "block",
+        right:"0px"
       });
       $("arrow").css({
         display: "none"
@@ -275,22 +277,6 @@ $(document).ready(function(){
       deploy();
     });
 
-    $("#a11").mouseover(function(){
-      $("box").css({
-        display: "none"
-      });
-      $("#11").css({
-        display: "block"
-      });
-      $("arrow").css({
-        display: "none"
-      });
-      $("#f11").css({
-        display: "block"
-      });
-      deploy();
-    });
-
     
      //Firefox
     $('back').bind('DOMMouseScroll', function(e){
@@ -355,6 +341,12 @@ $(document).ready(function(){
     $("back").click(function(){
       $(this).parent().next().animate({right:"-=76.6vw"});
     });
+
+    if ($(window).width() < 800) {
+      
+    }
+    else {
+    }
 
 });
 

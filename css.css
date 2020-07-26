@@ -433,6 +433,10 @@ chat{
 	background: transparent url('img/loading.gif') center no-repeat;
 }
 
+.next{
+	z-index: 10000;
+}
+
 
 @media only screen and (max-width: 640px) {
   art{
@@ -618,21 +622,25 @@ chat{
 		position: fixed;
 		display: block;
 		top:0vh;
-		right:-5vw;
+		right:0vw;
 		bottom:0vh;
 		width: 100vw;
 		z-index:25;
 		text-align: center;
 		vertical-align: middle;
+		z-index: 500;
 	}
 
 	box{
 		position: absolute;
+		height: 100vh;
 		width: 100vw;
 		display: none;
 		font-size: 1.5vh;
 		text-align: center;
 		vertical-align: middle;
+		background: #fff;
+		z-index: 500;
 	}
 
 	box item{
@@ -646,21 +654,23 @@ chat{
 
 	box item img{
 		position: relative;
+		top:50vh;
 		width:63vw;
 		height:auto;
 		right:0vw;
 		text-align: center;
 		vertical-align: middle;
+		transform: translate(0%,-50%);
 	}
 
 	back{
 		position: fixed;
 		display: block;
 		top:0vh;
-		left:27zvw;
-		height: 50vh;
-		width:50vw;
-		z-index:10000;
+		left:6vw;
+		bottom:0vh;
+		width:40vw;
+		z-index:700;
 		cursor: pointer;
 	}
 
@@ -673,9 +683,9 @@ chat{
 		display: block;
 		top:0vh;
 		right:0vw;
-		height:50vh;
-		width:50vw;
-		z-index:10000;
+		bottom:0vh;
+		width:40vw;
+		z-index:700;
 		cursor: pointer;
 	}
 
@@ -684,22 +694,21 @@ chat{
 	}
 
 	file{
-		position: fixed;
+		position:absolute;
 		display: none;
 		bottom: 0vh;
-		left:9vw;
-		width: 20vw;
-		line-height: 2vh;
-		text-align: left;
+		left:0vw;
+		text-align: center;
 		font-size: 1.8vh;
 		z-index: 1000;
-		padding: 1vh;
+		width: 100vw;
 	}
 
 	file span{
 		text-decoration: underline;
 		font-weight: bolder;
 		cursor: pointer;
+		z-index: 400;
 	}
 
 	box item a{
@@ -707,15 +716,18 @@ chat{
 	}
 
 	list{
-		position: relative;
+		position: fixed;
 		display: block;
-		top:55vh;
-		left:9vw;
+		top:50vh;
+		left:0vw;
 		width: 50vh;
 		z-index:100;
 		font-family: 'Inter', sans-serif;
 		font-weight: normal;
 		text-align: center;
+		vertical-align: middle;
+		transform: translate(00%,-50%);
+		z-index: 700;
 	}
 
 	list span{
@@ -725,6 +737,7 @@ chat{
 		margin:1vh 0vh;
 		font-size: 2.1vh;
 		text-transform: uppercase;
+		z-index: 700;																																																																																																																																																																																																																																							
 	}
 
 	.degrade{
