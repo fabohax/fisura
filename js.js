@@ -101,6 +101,9 @@ $(document).ready(function(){
       $(".s15").animate({
         right:(wimg*14)+"vw"
       });
+      $(".s16").animate({
+        right:(wimg*15)+"vw"
+      });
     }
 
     deploy();
@@ -348,6 +351,109 @@ $(document).ready(function(){
     else {
     }
 
+    $(".next").click(function(){
+      $("arrow").css({display:"none"});
+      $(this).parent().css({display:"none"});
+      $(this).parent().next().css({display:"block"});
+      $(this).parent().next().next().css({display:"block"});
+    });
+
+    $(".a1").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a1").css({textDecoration:"underline"});
+    });
+
+    $(".a2").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a2").css({textDecoration:"underline"});
+    });
+
+    $(".a3").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a3").css({textDecoration:"underline"});
+    });
+
+    $(".a4").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a4").css({textDecoration:"underline"});
+    });
+
+    $(".a5").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a5").css({textDecoration:"underline"});
+    });
+
+    $(".a6").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a6").css({textDecoration:"underline"});
+    });
+
+    $(".a7").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a7").css({textDecoration:"underline"});
+    });
+
+    $(".a8").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a8").css({textDecoration:"underline"});
+    });
+
+    $(".a9").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a9").css({textDecoration:"underline"});
+    });
+
+    $(".a10").click(function(){
+      $("list span").css({textDecoration:"none"});
+      $("#a10").css({textDecoration:"underline"});
+    });
+
+    if($(window).width() <= 800){
+      
+      $("body").css({animation:"none"});
+      $("#a1").click(function(){
+        $("#f1 next").trigger("click");
+        $("#1 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a2").click(function(){
+        $("#f2 next").trigger("click");
+        $("#2 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a3").click(function(){
+        $("#f3 next").trigger("click");
+        $("#3 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a4").click(function(){
+        $("#f4 next").trigger("click");
+        $("#4 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a5").click(function(){
+        $("#f5 next").trigger("click");
+        $("#5 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a6").click(function(){
+        $("#f6 next").trigger("click");
+        $("#6 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a7").click(function(){
+        $("#f7 next").trigger("click");
+        $("#7 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a8").click(function(){
+        $("#f8 next").trigger("click");
+        $("#8 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a9").click(function(){
+        $("#f9 next").trigger("click");
+        $("#9 item img").css({padding:"50vh 20vw 50vh"});
+      });
+      $("#a10").click(function(){
+        $("#f10 next").trigger("click");
+        $("#10 item img").css({padding:"50vh 20vw 50vh"});
+      });
+    }
+
 });
 
     
+

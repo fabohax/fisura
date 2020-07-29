@@ -5,8 +5,8 @@
 }
 
 @keyframes toBlack {
-  0% {background: #fff;}
-  100% {background: #111;}
+  0% {background: #000;}
+  100% {background: #fff;}
 }
 
 /* width */
@@ -339,8 +339,8 @@ back{
 	top:0vh;
 	left:27vw;
 	height: 100vh;
-	width:50vw;
-	z-index:9000;
+	width:35vw;
+	z-index:1500;
 	cursor: pointer;
 }
 
@@ -355,7 +355,7 @@ next{
 	right:0vw;
 	height:100vh;
 	width:50vw;
-	z-index:10000;
+	z-index:1000;
 	cursor: pointer;
 }
 
@@ -434,7 +434,8 @@ chat{
 }
 
 .next{
-	z-index: 10000;
+	z-index: 1200;
+	cursor: pointer;
 }
 
 
@@ -622,25 +623,28 @@ chat{
 		position: fixed;
 		display: block;
 		top:0vh;
-		right:0vw;
+		right:-82.5vw;
 		bottom:0vh;
 		width: 100vw;
 		z-index:25;
 		text-align: center;
 		vertical-align: middle;
 		z-index: 500;
+		background: #fff;
 	}
 
 	box{
 		position: absolute;
+		top:0vh;
+		bottom:0vh;
 		height: 100vh;
 		width: 100vw;
 		display: none;
-		font-size: 1.5vh;
 		text-align: center;
 		vertical-align: middle;
 		background: #fff;
 		z-index: 500;
+
 	}
 
 	box item{
@@ -650,6 +654,7 @@ chat{
 		width: 100vw;
 		text-align: center;
 		vertical-align: middle;
+
 	}
 
 	box item img{
@@ -661,6 +666,7 @@ chat{
 		text-align: center;
 		vertical-align: middle;
 		transform: translate(0%,-50%);
+		padding:50vh 20vw 50vh;
 	}
 
 	back{
@@ -669,7 +675,7 @@ chat{
 		top:0vh;
 		left:6vw;
 		bottom:0vh;
-		width:40vw;
+		width:25vw;
 		z-index:700;
 		cursor: pointer;
 	}
@@ -684,7 +690,7 @@ chat{
 		top:0vh;
 		right:0vw;
 		bottom:0vh;
-		width:40vw;
+		width:25vw;
 		z-index:700;
 		cursor: pointer;
 	}
@@ -719,7 +725,7 @@ chat{
 		position: fixed;
 		display: block;
 		top:50vh;
-		left:0vw;
+		left:9vw;
 		width: 50vh;
 		z-index:100;
 		font-family: 'Inter', sans-serif;
@@ -727,7 +733,7 @@ chat{
 		text-align: center;
 		vertical-align: middle;
 		transform: translate(00%,-50%);
-		z-index: 700;
+		z-index: 300;
 	}
 
 	list span{
@@ -750,5 +756,9 @@ chat{
 		background: #fff;
 		z-index: 50;
 		animation: toWhite 3s ease-in forwards;
+	}
+
+	.next{
+		display: none;
 	}
 }
