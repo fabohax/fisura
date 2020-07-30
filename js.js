@@ -412,6 +412,7 @@ $(document).ready(function(){
       
       $("body").css({animation:"none"});
       $("#a1").click(function(){
+        $("box").css({});
         $("#f1 next").trigger("click");
         $("#1 item img").css({padding:"50vh 20vw 50vh"});
       });

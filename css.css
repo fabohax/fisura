@@ -599,6 +599,19 @@ chat{
 
 @media only screen and (max-width: 800px) {
 
+	logo{
+		position:absolute;
+		display:block;
+		top:-5vh;
+		left:6vw;
+		z-index:1000;
+	}
+
+	logo img{
+		width:21vh;
+		filter: invert(0);
+	}
+
 	mouth{
 		position:absolute;
 		display:block;
