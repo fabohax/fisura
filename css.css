@@ -642,7 +642,6 @@ chat{
 		display: none;
 		text-align: center;
 		vertical-align: middle;
-		background: #fff;
 		z-index: 500;
 
 	}
@@ -650,8 +649,11 @@ chat{
 	box item{
 		position: absolute;
 		display: block;
+		top:0vh;
 		right:0vw;
+		height: 100vh;
 		width: 100vw;
+		background: #fff;
 		text-align: center;
 		vertical-align: middle;
 
@@ -660,13 +662,13 @@ chat{
 	box item img{
 		position: relative;
 		top:50vh;
-		width:63vw;
+		width:60vw;
 		height:auto;
 		right:0vw;
 		text-align: center;
 		vertical-align: middle;
 		transform: translate(0%,-50%);
-		padding:50vh 20vw 50vh;
+		padding:100vh 20vw;
 	}
 
 	back{
@@ -725,14 +727,14 @@ chat{
 		position: fixed;
 		display: block;
 		top:50vh;
-		left:9vw;
+		left:56vw;
 		width: 50vh;
 		z-index:100;
 		font-family: 'Inter', sans-serif;
 		font-weight: normal;
 		text-align: center;
 		vertical-align: middle;
-		transform: translate(00%,-50%);
+		transform: translate(-50%,-50%);
 		z-index: 300;
 	}
 
@@ -740,7 +742,7 @@ chat{
 		position: relative;
 		display: block;
 		width: auto;
-		margin:1vh 0vh;
+		margin:3vh 0vh;
 		font-size: 2.1vh;
 		text-transform: uppercase;
 		z-index: 700;																																																																																																																																																																																																																																							
