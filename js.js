@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
     $("#contacto").click(function(){
 	    $("front").animate({
 		    	width: '100%'
@@ -60,7 +61,8 @@ $(document).ready(function(){
     function deploy(){
       var wimg = -76.6;
       $(".s2").animate({
-        right:wimg+"vw"
+        right:wimg+"vw",
+        textAlign:"center"
       });
       $(".s3").animate({
         right:(wimg*2)+"vw"
@@ -107,6 +109,7 @@ $(document).ready(function(){
     }
 
     deploy();
+
 
     $("#1").css(
       "display","block"
@@ -453,6 +456,10 @@ $(document).ready(function(){
         $("#10 item img").css({padding:"50vh 20vw 50vh"});
       });
     }
+
+    if($("box item img").width()>"900"){
+      $(this).parent().css("textAlign","right");
+    };
 
 });
 

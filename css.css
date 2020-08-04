@@ -322,7 +322,7 @@ box item{
 	display: block;
 	right:0vw;
 	width: 76.6vw;
-	text-align: center;
+	text-align: right;
 }
 
 box item img{
@@ -331,6 +331,14 @@ box item img{
 	right:0vw;
 	height: 100vh;
 	text-align: center;
+}
+
+.c{
+	text-align: center;
+}
+
+.r{
+	text-align: right;
 }
 
 back{
@@ -486,14 +494,14 @@ chat{
 	}
 
 	grid{
-		position: fixed;
+		position: relative;
 		display: block;
 		top:0vh;
-		right:-2vw;
+		right:0vw;
 		bottom:0vh;
 		width: 100vw;
 		z-index:25;
-		text-align: center;
+		text-align: right;
 	}
 
 	box{
@@ -501,7 +509,7 @@ chat{
 		width: 100vw;
 		display: none;
 		font-size: 1.5vh;
-		text-align: center;
+		text-align: right;
 	}
 
 	box item{
@@ -509,7 +517,7 @@ chat{
 		display: block;
 		right:0vw;
 		width: 100vw;
-		text-align: center;
+		text-align: right;
 	}
 
 	box item img{
@@ -517,7 +525,7 @@ chat{
 		max-width: 100vw;
 		right:0vw;
 		height: 100vh;
-		text-align: center;
+		text-align: right;
 	}
 
 	back{
