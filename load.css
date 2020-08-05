@@ -1,0 +1,7 @@
+.progressive{position:relative;overflow:hidden;outline:none;text-align:center;right:0vw;}
+.progressive img{
+	
+}
+.progressive img.preview{filter:blur(0.5vw);overflow:hidden;outline:none;}
+.progressive img.reveal{position:absolute;animation:progressiveReveal 2s ease}
+@keyframes progressiveReveal{0%{opacity:0}to{opacity:1}}

@@ -325,7 +325,13 @@ box item{
 	text-align: right;
 }
 
-box item img{
+box item a{
+	position: relative;
+	width: 76.6vw;
+	right:0vw;
+}
+
+box item a img{
 	position: relative;
 	max-width: 76.6vw;
 	right:0vw;
@@ -439,11 +445,13 @@ chat{
 
 .loading {
 	background: transparent url('img/loading.gif') center no-repeat;
+
 }
 
 .next{
 	z-index: 1200;
 	cursor: pointer;
+	border-radius: 100px;
 }
 
 

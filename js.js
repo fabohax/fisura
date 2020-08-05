@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     $("#contacto").click(function(){
 	    $("front").animate({
 		    	width: '100%'
@@ -33,12 +32,14 @@ $(document).ready(function(){
     	$('mouth img#6').delay(t1*20).fadeIn(t1).delay(t2).fadeOut(t1);
     	$('mouth img#7').delay(t1*24).fadeIn(t1).delay(t2).fadeOut(t1);
     	$('mouth img#8').delay(t1*28).fadeIn(t1).delay(t2).fadeOut(t1);
+      $('mouth img#9').delay(t1*32).fadeIn(t1).delay(t2).fadeOut(t1);
+      $('mouth img#10').delay(t1*36).fadeIn(t1).delay(t2).fadeOut(t1);
 
   	};
 
     loop();
 
-  	var looper = window.setInterval(loop, 49500);
+  	var looper = window.setInterval(loop, t1*40);
 
     $('list span').mouseover(function(){
       $('list span').css({
