@@ -285,39 +285,15 @@ $(document).ready(function(){
     });
 
     
-     //Firefox
-    $('back').bind('DOMMouseScroll', function(e){
-       if(e.originalEvent.detail > 0) {
-           //scroll down
-           $(this).parent().next().animate({right:"+=76.6vw"});
-       }else {
-           //scroll up
-           $(this).parent().next().animate({right:"-=76.6vw"});
-       }
-
-       //prevent page fom scrolling
-       return false;
-    });
-
-    $('next').bind('DOMMouseScroll', function(e){
-       if(e.originalEvent.detail > 0) {
-           //scroll down
-           $(this).parent().next().animate({right:"+=76.6vw"});
-       }else {
-           //scroll up
-           $(this).parent().next().animate({right:"-=76.6vw"});
-       }
-
-       //prevent page fom scrolling
-       return false;
-    });
+     
 
     //IE, Opera, Safari
-    $('back').bind('mousewheel', function(e){
-       if(e.originalEvent.wheelDelta < 0) {
+    $('back').bind('wheel', function(e){
+       if(this.oldScroll < this.scrollY) {
            //scroll down
            $(this).parent().next().animate({right:"+=76.6vw"});
-       }else {
+       }
+       if(this.oldScroll < this.scrollY) {
            //scroll up
            $(this).parent().next().animate({right:"-=76.6vw"});
        }
@@ -326,11 +302,12 @@ $(document).ready(function(){
        return false;
     });
 
-    $('next').bind('mousewheel', function(e){
-       if(e.originalEvent.wheelDelta < 0) {
+    $('next').bind('wheel', function(e){
+       if(this.oldScroll < this.scrollY) {
            //scroll down
            $(this).parent().next().animate({right:"+=76.6vw"});
-       }else {
+       }
+       if(this.oldScroll > this.scrollY){
            //scroll up
            $(this).parent().next().animate({right:"-=76.6vw"});
        }

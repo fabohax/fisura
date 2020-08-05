@@ -2,6 +2,6 @@
 .progressive img{
 	
 }
-.progressive img.preview{filter:blur(0.5vw);overflow:hidden;outline:none;}
+.progressive img.preview{filter:blur(0.1vw);overflow:hidden;outline:none;}
 .progressive img.reveal{position:absolute;animation:progressiveReveal 2s ease}
-@keyframes progressiveReveal{0%{opacity:0}to{opacity:1}}
+@keyframes progressiveReveal{0%{opacity:0.95}to{opacity:1}}
