@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     loop();
 
-  	var looper = window.setInterval(loop, t1*40);
+  	var looper = setInterval(loop, t1*40);
 
     $('list span').mouseover(function(){
       $('list span').css({

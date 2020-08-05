@@ -688,7 +688,7 @@ chat{
 
 	}
 
-	box item img{
+	box item a img{
 		position: relative;
 		top:50vh;
 		width:60vw;
