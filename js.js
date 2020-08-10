@@ -401,43 +401,43 @@ $(document).ready(function(){
       $("#a1").click(function(){
         $("box").css({});
         $("#f1 next").trigger("click");
-        $("#1 item img").css({padding:"50vh 10vw"});
+        $("#1 item img").css({padding:"50vh 0vw"});
       });
       $("#a2").click(function(){
         $("#f2 next").trigger("click");
-        $("#2 item img").css({padding:"50vh 10vw"});
+        $("#2 item img").css({padding:"50vh 0vw"});
       });
       $("#a3").click(function(){
         $("#f3 next").trigger("click");
-        $("#3 item img").css({padding:"50vh 10vw"});
+        $("#3 item img").css({padding:"50vh 0vw"});
       });
       $("#a4").click(function(){
         $("#f4 next").trigger("click");
-        $("#4 item img").css({padding:"50vh 10vw"});
+        $("#4 item img").css({padding:"50vh 0vw"});
       });
       $("#a5").click(function(){
         $("#f5 next").trigger("click");
-        $("#5 item img").css({padding:"50vh 10vw"});
+        $("#5 item img").css({padding:"50vh 0vw"});
       });
       $("#a6").click(function(){
         $("#f6 next").trigger("click");
-        $("#6 item img").css({padding:"50vh 10vw"});
+        $("#6 item img").css({padding:"50vh 0vw"});
       });
       $("#a7").click(function(){
         $("#f7 next").trigger("click");
-        $("#7 item img").css({padding:"50vh 10vw"});
+        $("#7 item img").css({padding:"50vh 0vw"});
       });
       $("#a8").click(function(){
         $("#f8 next").trigger("click");
-        $("#8 item img").css({padding:"50vh 10vw"});
+        $("#8 item img").css({padding:"50vh 0vw"});
       });
       $("#a9").click(function(){
         $("#f9 next").trigger("click");
-        $("#9 item img").css({padding:"50vh 10vw"});
+        $("#9 item img").css({padding:"50vh 0vw"});
       });
       $("#a10").click(function(){
         $("#f10 next").trigger("click");
-        $("#10 item img").css({padding:"50vh 10vw"});
+        $("#10 item img").css({padding:"50vh 0vw"});
       });
 
       function deploy(){
@@ -494,11 +494,11 @@ $(document).ready(function(){
 
       $("next").click(function(){
         $(this).prev().css({display:"block"})
-        $(this).parent().next().animate({right:"+=80vw"});
+        $(this).parent().next().animate({right:"+=100vw"});
       });
 
       $("back").click(function(){
-        $(this).parent().next().animate({right:"-=80vw"});
+        $(this).parent().next().animate({right:"-=100vw"});
       });
     }
 
