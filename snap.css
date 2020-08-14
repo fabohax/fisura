@@ -1,0 +1,112 @@
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border:transparent;
+  border-right:#111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111;
+  border:1px solid #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	overflow: hidden;
+}
+
+box {
+  /* Ensure that the contents flow horizontally */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: nowrap;
+  top:-2vh;
+  right:0vw;
+  bottom:0vh;
+  display: flex;
+  transform: rotate(-90deg) translate(25%,12.5%);
+}
+
+box.vertical {
+  flex-direction: row;
+}
+
+/* 2018 spec - For Safari 11, Chrome 69+ */
+box.snap {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
+}
+
+box.snap > div {
+  scroll-snap-align: center;
+}
+
+box.snap.vertical {
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+}
+
+
+
+/* 2015 spec - For Firefox, Edge, IE */
+box.snap {
+  scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-points-x: repeat(100%);
+  -ms-scroll-snap-points-x: repeat(100%);
+}
+
+box.snap.vertical {
+  scroll-snap-points-x: initial;
+  -ms-scroll-snap-points-x: initial;
+  scroll-snap-points-y: repeat(100%);
+  -ms-scroll-snap-points-y: repeat(100%);
+}
+
+
+/* Below here is styling, not important for the actual example, just to make it look nice. No need to look down here! */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+box {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+}
+
+box div {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+box div img{
+	position: relative;
+	display: block;
+	top:0vh;
+	bottom: 0vh;
+	transform: rotate(90deg) translate(0vw,0vh);
+}

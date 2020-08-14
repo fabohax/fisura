@@ -1,0 +1,120 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+logo{
+	position:fixed;
+	display:block;
+	top:0vh;
+	left:6vw;
+	z-index:1000;
+}
+
+logo img{
+	width:21vh;
+	filter: invert(0);
+}
+
+front{
+	position:fixed;
+	display:block;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	background: #111;
+	width:6vh;
+	border:none;
+	color:white;
+	z-index:1000;
+}
+
+front a{
+}
+
+front a span{
+	position: fixed;
+	display:block;
+	left:2vh;
+	color:#fff;
+	height:3vh;
+	width: 3vh;
+	transform:rotate(-90deg);
+	font-family: Roboto;
+	font-size:1.33vh;
+	font-weight: bold;
+	letter-spacing: 0.333vw;
+	text-align: center;
+}
+
+#inicio{
+	position: absolute;
+	display: flex;
+	top:22.5vh;
+}
+
+#obras{
+	position: absolute;
+	display: flex;
+	top:35vh;
+}
+
+#artistas{
+	position: absolute;
+	display: flex;
+	top:52.5vh;
+}
+
+#nosotros{
+	position: absolute;
+	display: flex;
+	top:70vh;
+}
+
+#contacto{
+	position: absolute;	
+	display: flex;
+	top:87.5vh;
+}
+
+list{
+	position: absolute;
+	display: block;
+	top:24vh;
+	left: 11vw;
+	font-size: 2vh;
+	font-weight: bolder;
+	font: Inter;
+	z-index: 100;
+}
+
+list span{
+	position: relative;
+	display: block;
+	margin:2vh 0vh;
+	cursor: pointer;
+}
+
+file{
+	position: absolute;
+	display: block;
+	bottom:2vh;
+	left: 11vw;
+	z-index: 100;
+}
+
+file a{
+	color:#000;
+	font-weight: bolder;
+	font-size:2vh;
+}
+
+.degrade{
+	position: absolute;
+	display: block;
+	top:0vh;
+	bottom:0vh;
+	left:0vw;
+	width: 25vw;
+	background: #fff;
+	z-index: 10;
+}
