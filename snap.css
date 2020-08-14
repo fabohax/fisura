@@ -106,7 +106,6 @@ box div {
 box div img{
 	position: relative;
 	display: block;
-	top:0vh;
-	bottom: 0vh;
+	height: 100vh;
 	transform: rotate(90deg) translate(0vw,0vh);
 }
