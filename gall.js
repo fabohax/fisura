@@ -1,0 +1,49 @@
+$(document).ready(function(){
+	$("list span").mouseover(function(){
+		$("list span").css("textDecoration","none")
+		$(this).css({
+			textDecoration:"underline",
+			fontWeight:"bolder"
+		});
+	});
+	$("box").css({display:"flex"});
+	$("#a1").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#1").css({display:"flex"});
+	});
+	$("#a2").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#2").css({display:"flex"});
+	});
+	$("#a3").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#3").css({display:"flex"});
+	});
+	$("#a4").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#4").css({display:"flex"});
+	});
+	$("#a5").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#5").css({display:"flex"});
+	});$("#a6").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#6").css({display:"flex"});
+	});
+	$("#a7").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#7").css({display:"flex"});
+	});
+	$("#a8").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#8").css({display:"flex"});
+	});
+	$("#a9").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#9").css({display:"flex"});
+	});
+	$("#a10").mouseover(function(){
+		$("box").css({display:"none"});
+		$("#10").css({display:"flex"});
+	});
+});

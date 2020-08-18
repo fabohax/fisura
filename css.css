@@ -29,7 +29,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #111;
+  background: #000;
 }
 
 body{
@@ -298,170 +298,6 @@ obra{
 	bottom:0px;
 }
 
-grid{
-	position: fixed;
-	display: block;
-	top:0vh;
-	right:-2vw;
-	bottom:0vh;
-	width: 76.6vw;
-	z-index:25;
-	text-align: center;
-}
-
-box{
-	position: absolute;
-	width: 76.6vw;
-	display: none;
-	font-size: 1.5vh;
-	text-align: center;
-}
-
-box item{
-	position: absolute;
-	display: block;
-	right:0vw;
-	width: 76.6vw;
-	text-align: right;
-	overflow: hidden;
-}
-
-box item a{
-	position: relative;
-	width: 76.6vw;
-	right:0vw;
-}
-
-box item a img{
-	position: relative;
-	max-width: 100vw;
-	right:2vw;
-	height: 100vh;
-	text-align: center;
-}
-
-.c{
-	text-align: center;
-}
-
-.r{
-	text-align: right;
-}
-
-back{
-	position: fixed;
-	display: none;
-	top:0vh;
-	left:27vw;
-	height: 100vh;
-	width:35vw;
-	z-index:1500;
-	cursor: pointer;
-}
-
-back img{
-	height: 3.3vh;
-}
-
-next{
-	position: fixed;
-	display: block;
-	top:0vh;
-	right:0vw;
-	height:100vh;
-	width:60vw;
-	z-index:1000;
-	cursor: pointer;
-}
-
-next img{
-	height: 3.3vh;
-}
-
-file{
-	position: fixed;
-	display: block;
-	bottom: 0vh;
-	left:11vw;
-	width: 20vw;
-	line-height: 2vh;
-	text-align: left;
-	font-size: 1.8vh;
-	z-index: 1000;
-	padding: 1vh;
-}
-
-file span{
-	text-decoration: underline;
-	font-weight: bolder;
-	cursor: pointer;
-}
-
-box item a{
-	text-decoration: underline;
-}
-
-list{
-	position: relative;
-	display: block;
-	top:12vw;
-	left:11vw;
-	width: 30vh;
-	z-index:100;
-	font-family: 'Inter', sans-serif;
-	font-weight: normal;
-	text-align: left;
-}
-
-list span{
-	position: relative;
-	display: block;
-	width: auto;
-	margin:2vh 0vh;
-	font-size: 2.1vh;
-	text-transform: uppercase;
-}
-
-.degrade{
-	position: fixed;
-	display: block;
-	top: 0vh;
-	left:0vh;
-	bottom:0vh;
-	width: 27vw;
-	background: #fff;
-	z-index: 50;
-	animation: toWhite 3s ease-in forwards;
-}
-
-arrow{
-	position:absolute;
-	display: none;
-}
-
-chat{
-	position: absolute;
-	display: none;
-}
-
-.loading {
-	background: transparent url('img/loading.gif') center no-repeat;
-
-}
-
-.next{
-	z-index: 1200;
-	cursor: pointer;
-	right: 0vw;
-	text-align: right;
-}
-
-chat{
-		display: none;
-	}
-
-
-
 
 @media only screen and (max-width: 1025px) {
 
@@ -666,3 +502,5 @@ chat{
 		display: block;
 	}
 }
+
+

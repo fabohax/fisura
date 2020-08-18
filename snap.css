@@ -30,15 +30,17 @@ body{
 	overflow: hidden;
 }
 
-box {
-  /* Ensure that the contents flow horizontally */
+box{
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vw;
   overflow-x: hidden;
   overflow-y: scroll;
   white-space: nowrap;
   top:-2vh;
   right:0vw;
   bottom:0vh;
-  display: flex;
   transform: rotate(-90deg) translate(25%,12.5%);
 }
 
@@ -52,7 +54,7 @@ box.snap {
   -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
 }
 
-box.snap > div {
+box.snap > a {
   scroll-snap-align: center;
 }
 
@@ -86,13 +88,7 @@ html, body {
   padding: 0;
 }
 
-box {
-  position: relative;
-  width: 100vw;
-  height: 100vw;
-}
-
-box div {
+box a{
   min-width: 100%;
   min-height: 100%;
   display: flex;
@@ -103,7 +99,7 @@ box div {
   font-size: 20px;
 }
 
-box div img{
+box a img{
 	position: relative;
 	display: block;
 	height: 100vh;
