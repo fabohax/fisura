@@ -1,3 +1,15 @@
+@keyframes 	ofblack {
+  0% {background: #000;opacity:0%}
+  50%{background: #000;opacity:75%}
+  100% {background: transparent;opacity: 100%}
+}
+
+@keyframes 	ofwhite {
+  0% {background: #fff;opacity:0%}
+  50%{background: #fff;opacity:99%}
+  100% {background: transparent;opacity: 100%}
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
@@ -29,6 +41,8 @@
 body{
 	overflow: hidden;
 	scroll-behavior: smooth;
+	animation: ofblack 5s ease-in forwards;
+	user-select: none;
 }
 
 list{
@@ -111,19 +125,25 @@ box a{
 	position: relative;
 	display: flex;
 	min-width:100vh;
-	min-height: 75vw;
+	min-height:75vw;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	cursor:pointer;
+	cursor:crosshair;
 }
 
 box a img{
 	position:relative;
 	display: block;
+	top:0vh;
+	bottom:0vh;
 	transform:rotate(90deg) translate(0vh,0vh);
 	object-fit: cover;
-	cursor:pointer;
+	cursor:crosshair;
+}
+
+.ofwhite{
+	animation:ofwhite 9s linear forwards;
 }
 
 
