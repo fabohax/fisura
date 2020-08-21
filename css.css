@@ -253,3 +253,30 @@ obra{
 	position:relative;
 	bottom:0px;
 }
+
+@media only screen and (max-width: 1025px) {
+	
+	boxes{
+		position: relative;
+		display: block;
+		padding: 15vh 0vh 0vh;
+		text-align: center;
+	}
+
+	bio{
+		padding: 5vw;
+		width:75vw;
+	}
+
+	bio img{
+		min-width: 50vw;
+	}
+
+	art{
+		padding:0vw;
+		width: 75vw;
+		left:40vw;
+		bottom:5vh;
+	}
+
+}
