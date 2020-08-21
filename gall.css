@@ -135,15 +135,10 @@ box a{
 box a img{
 	position:relative;
 	display: block;
-	top:0vh;
-	bottom:0vh;
+	height:100vh;
 	transform:rotate(90deg) translate(0vh,0vh);
 	object-fit: cover;
 	cursor:crosshair;
-}
-
-.ofwhite{
-	animation:ofwhite 9s linear forwards;
 }
 
 
