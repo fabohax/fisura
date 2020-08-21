@@ -1,86 +1,42 @@
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border:transparent;
+  border-right:#111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111;
+  border:1px solid #111;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body{
-	font-family: 'Roboto', sans-serif;
-}
-
-logo{
-	position:fixed;
-	display:block;
-	top:0vh;
-	left:6vw;
-	z-index:1000;
-}
-
-logo img{
-	width:21vh;
-	filter: invert(0);
-}
-
-front{
-	position:fixed;
-	display:block;
-	top:0px;
-	left:0px;
-	bottom:0px;
-	background: #111;
-	width:6vh;
-	border:none;
-	color:white;
-	z-index:1000;
-}
-
-front a{
-}
-
-front a span{
-	position: fixed;
-	display:block;
-	left:2vh;
-	color:#fff;
-	height:3vh;
-	width: 3vh;
-	transform:rotate(-90deg);
-	font-family: Roboto;
-	font-size:1.33vh;
-	font-weight: bold;
-	letter-spacing: 0.333vw;
-	text-align: center;
-}
-
-#inicio{
-	position: absolute;
-	display: flex;
-	top:22.5vh;
-}
-
-#obras{
-	position: absolute;
-	display: flex;
-	top:35vh;
-}
-
-#artistas{
-	position: absolute;
-	display: flex;
-	top:52.5vh;
-}
-
-#nosotros{
-	position: absolute;
-	display: flex;
-	top:70vh;
-}
-
-#contacto{
-	position: absolute;	
-	display: flex;
-	top:87.5vh;
+	overflow: hidden;
+	scroll-behavior: smooth;
 }
 
 list{
-	position: absolute;
+	position: fixed;
 	display: block;
-	top:24vh;
-	left: 11vw;
+	top:50vh;
+	left:11vw;
+	margin-top: -25vh;
 	font-size: 2vh;
 	font-weight: bolder;
 	font: Inter;
@@ -99,27 +55,218 @@ list span:hover{
 	text-decoration: underline;
 }
 
-file{
-	position: absolute;
+buy{
+	position: fixed;
 	display: block;
 	bottom:2vh;
 	left: 11vw;
 	z-index: 100;
 }
 
-file a{
+buy a{
 	color:#000;
 	font-weight: bolder;
 	font-size:2vh;
 }
 
-.degrade{
+.loading {
+  background: url("img/loading.gif") no-repeat center;
+}
+
+
+
+
+
+
+
+box{
 	position: absolute;
 	display: block;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transform-origin: 100% 0%;
+	transform: rotate(-90deg) translate(0vh,-75vw);
 	top:0vh;
+	right:0vw;
 	bottom:0vh;
-	left:0vw;
-	width: 25vw;
-	background: #fff;
-	z-index: 10;
+	height:75vw;
+	width:100vh;
+	flex-direction: column;
+	scroll-snap-type: y mandatory;
+	-ms-scroll-snap-type: y mandatory;
+	scroll-snap-points-x: initial;
+	-ms-scroll-snap-points-x: initial;
+	scroll-snap-points-x: repeat(100vw);
+	-ms-scroll-snap-points-x: repeat(100vw);
+	scroll-snap-points-y: repeat(100vw);
+	-ms-scroll-snap-points-y: repeat(100vw);
+	-webkit-overflow-scrolling: touch; /*iOS Safari */
+}
+
+box > a {
+  scroll-snap-align: center;
+}
+
+box a{
+	position: relative;
+	display: flex;
+	min-width:100vh;
+	min-height: 75vw;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	cursor:pointer;
+}
+
+box a img{
+	position:relative;
+	display: block;
+	transform:rotate(90deg) translate(0vh,0vh);
+	object-fit: cover;
+	cursor:pointer;
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+	body{
+		
+	}
+
+	logo{
+		display: none;
+	}
+
+	list{
+		position: fixed;
+		display: block;
+		top:50vh;
+		left:50vw;
+		text-align: center;
+		transform:translate(-50%,0%);
+		z-index: 2100;
+	}
+
+	list span{
+		width:100vw;
+	}
+
+	buy{
+		display:none;
+	}
+
+	box{
+		position: fixed;
+		display: block;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		transform-origin: 100% 0%;
+		transform: rotate(-90deg) translate(0vh,-0vw);
+		top:0vh;
+		right:0vw;
+		bottom:0vh;
+		height:100vw;
+		width:100vh;
+		flex-direction: column;
+		scroll-snap-type: y mandatory;
+		-ms-scroll-snap-type: y mandatory;
+		scroll-snap-points-x: initial;
+		-ms-scroll-snap-points-x: initial;
+		scroll-snap-points-x: repeat(100vw);
+		-ms-scroll-snap-points-x: repeat(100vw);
+		scroll-snap-points-y: repeat(100vw);
+		-ms-scroll-snap-points-y: repeat(100vw);
+		-webkit-overflow-scrolling: touch; /*iOS Safari */
+		z-index:2200;
+		opacity:0;
+		scrollTop:0;
+	}
+
+	box > a {
+	  scroll-snap-align: center;
+	}
+
+	box a{
+		position: relative;
+		display: flex;
+		min-width:100vh;
+		min-height: 100vw;
+		text-align: center;
+		justify-content: center;
+		background: #fff;
+	}
+
+	box a img{
+		position:relative;
+		display: block;
+		width: 100vw;
+		transform:rotate(90deg) translate(0vh,0vh);
+		object-fit: contain;
+		image-rendering: crisp-edges;
+	}
+
+	front{
+		height: 3vh;
+		overflow: hidden;
+		z-index: 5000;
+	}
+
+	open{
+		position: fixed;
+		display: block;
+		top:0vh;
+		left:0vw;
+		height: 6vh;
+		width: 6vh;
+		z-index: 5000;
+	}
+
+	close{
+		position: fixed;
+		display: none;
+		top:0vh;
+		left:0vw;
+		height: 6vh;
+		width: 6vh;
+		z-index:5000;
+	}
+
+	back{
+		position:fixed;
+		display:none;
+		top:0vh;
+		left:0vw;
+		bottom:0vh;
+		width:50vw;
+		background: transparent;
+		z-index:3000;
+	}
+
+	next{
+		position:fixed;
+		display: none;
+		top:0vh;
+		right:0vw;
+		bottom:0vh;
+		width:50vw;
+		background:transparent;
+		z-index: 3000;
+	}
+
+	x{
+		position:fixed;
+		display:block;
+		top:0vh;
+		right:0vh;
+		height:12.5vh;
+		width:100vw;
+		background: transparent;
+		z-index:3500;
+	}
+
+	.v{
+		position: relative;
+		display: block;
+		margin-bottom:-50%;
+	}
 }
