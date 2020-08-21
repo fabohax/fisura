@@ -42,54 +42,63 @@ $(document).ready(function(){
 			$("#2").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 		$("#a3").click(function(){
 			$("#3").css({transform: "rotate(-90deg) translate(0vh,-100vw)",display:"flex"});
 			$("#3").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 		$("#a4").click(function(){
 			$("#4").css({transform: "rotate(-90deg) translate(0vh,-100vw)",display:"flex"});
 			$("#4").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 		$("#a5").click(function(){
 			$("#5").css({transform: "rotate(-90deg) translate(0vh,-100vw)",display:"flex"});
 			$("#5").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 		$("#a6").click(function(){
 			$("#6").css({transform: "rotate(-90deg) translate(0vh,-100vw)",display:"flex"});
 			$("#6").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 		$("#a7").click(function(){
 			$("#7").css({transform: "rotate(-90deg) translate(0vh,-100vw)",display:"flex"});
 			$("#7").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 		$("#a8").click(function(){
 			$("#8").css({transform: "rotate(-90deg) translate(0vh,-100vw)",display:"flex"});
 			$("#8").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 		$("#a9").click(function(){
 			$("#9").css({transform: "rotate(-90deg) translate(0vh,-100vw)",display:"flex"});
 			$("#9").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 		$("#a10").click(function(){
 			$("#10").css({transform: "rotate(-90deg) translate(0vh,-100vw)",display:"flex"});
 			$("#10").animate({opacity:"1"});
 			$("back").css("display","block");
 			$("next").css("display","block");
+			$("x").css("display","block");
 		});
 
 		$("open").click(function(){
