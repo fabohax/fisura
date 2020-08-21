@@ -137,8 +137,17 @@ box a img{
 	display: block;
 	height:100vh;
 	transform:rotate(90deg) translate(0vh,0vh);
-	object-fit: cover;
+	object-fit: contain;
 	cursor:crosshair;
+	overflow: visible;
+}
+
+.ofwhite{
+
+}
+
+x{
+	display: none;
 }
 
 
@@ -270,13 +279,20 @@ box a img{
 
 	x{
 		position:fixed;
-		display:block;
+		display:none;
 		top:0vh;
 		right:0vh;
 		height:12.5vh;
 		width:100vw;
 		background: transparent;
 		z-index:3500;
+	}
+
+	x img{
+		position: fixed;
+		display: block;
+		height: 3vh;
+		right:0vw;
 	}
 
 	.v{
