@@ -100,11 +100,10 @@ $(document).ready(function(){
 
 		$("x").click(function(){
 			$("box").scrollTop(0);
-			$("box").animate({display:"none",opacity:"0"});
-			$("back").css("display","none");
-			$("next").css("display","none");
+			$("box").animate({opacity:"0"});
 			$(this).css("display","none");
 			$("list").show();
+			$("box").css({display:"none"});
 		});
 
 	}
