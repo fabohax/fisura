@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("#contacto").click(function(){
-	    $("front").animate({
+	    $("img").hide();
+      $("front").animate({
 		    	width: '100%'
 		  	}
 	    );
@@ -12,7 +13,7 @@ $(document).ready(function(){
 	    });
 	    $("logo img").css({
 	    	filter: 'invert(1)'
-	    })
+	    });
   	});
 });
 
