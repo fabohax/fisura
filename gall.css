@@ -4,45 +4,14 @@
   100% {background: transparent;opacity: 100%}
 }
 
-@keyframes 	ofwhite {
-  0% {background: #fff;opacity:0%}
-  50%{background: #fff;opacity:99%}
-  100% {background: transparent;opacity: 100%}
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 0px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-  border:transparent;
-  border-right:#111;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #111;
-  border:1px solid #111;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #000;
-}
-
 *{
 	margin: 0;
 	padding: 0;
 }
 
 body{
-	overflow: hidden;
-	scroll-behavior: smooth;
-	animation: ofblack 5s ease-in forwards;
-	user-select: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bolder;
 }
 
 list{
@@ -65,131 +34,76 @@ list span{
 	user-select: none;
 }
 
-list span:hover{
-	text-decoration: underline;
-}
-
-buy{
-	position: fixed;
-	display: block;
-	bottom:2vh;
-	left: 11vw;
-	z-index: 100;
-}
-
-buy a{
-	color:#000;
-	font-weight: bolder;
-	font-size:2vh;
-}
-
 .loading {
   background: url("img/loading.gif") no-repeat center;
 }
 
 
+@media only screen and (min-width: 1025px) {
 
 
+	/* width */
+	::-webkit-scrollbar {
+	  width: 0px;
+	}
 
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: transparent;
+	  border:transparent;
+	  border-right:#111;
+	}
 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #111;
+	  border:1px solid #111;
+	}
 
-box{
-	position: absolute;
-	display: block;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	transform-origin: 100% 0%;
-	transform: rotate(-90deg) translate(0vh,-75vw);
-	top:0vh;
-	right:0vw;
-	bottom:0vh;
-	height:75vw;
-	width:100vh;
-	flex-direction: column;
-	scroll-snap-type: y mandatory;
-	-ms-scroll-snap-type: y mandatory;
-	scroll-snap-points-x: initial;
-	-ms-scroll-snap-points-x: initial;
-	scroll-snap-points-x: repeat(100vw);
-	-ms-scroll-snap-points-x: repeat(100vw);
-	scroll-snap-points-y: repeat(100vw);
-	-ms-scroll-snap-points-y: repeat(100vw);
-	-webkit-overflow-scrolling: touch; /*iOS Safari */
-}
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #000;
+	}
+	
 
-box > a {
-  scroll-snap-align: center;
-}
-
-box a{
-	position: relative;
-	display: flex;
-	min-width:100vh;
-	min-height:75vw;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	cursor:crosshair;
-}
-
-box a img{
-	position:relative;
-	display: block;
-	height:100vh;
-	transform:rotate(90deg) translate(0vh,0vh);
-	object-fit: contain;
-	cursor:crosshair;
-	overflow: visible;
-}
-
-.ofwhite{
-
-}
-
-x{
-	display: none;
-}
-
-
-@media only screen and (max-width: 1025px) {
 
 	body{
-		
+		overflow: hidden;
+		scroll-behavior: smooth;
+		/*animation: ofblack 5s ease-in forwards;*/
+		user-select: none;
 	}
 
-	logo{
-		display: none;
-	}
 
-	list{
-		position: fixed;
-		display: block;
-		top:50vh;
-		left:50vw;
-		text-align: center;
-		transform:translate(-50%,0%);
-		z-index: 2100;
-	}
-
-	list span{
-		width:100vw;
+	list span:hover{
+		text-decoration: underline;
 	}
 
 	buy{
-		display:none;
+		position: fixed;
+		display: block;
+		bottom:2vh;
+		left: 11vw;
+		z-index: 100;
+	}
+
+	buy a{
+		color:#000;
+		font-weight: bolder;
+		font-size:2vh;
 	}
 
 	box{
-		position: fixed;
+		position: absolute;
 		display: block;
 		overflow-x: hidden;
 		overflow-y: scroll;
 		transform-origin: 100% 0%;
-		transform: rotate(-90deg) translate(0vh,-0vw);
+		transform: rotate(-90deg) translate(0vh,-75vw);
 		top:0vh;
 		right:0vw;
 		bottom:0vh;
-		height:100vw;
+		height:75vw;
 		width:100vh;
 		flex-direction: column;
 		scroll-snap-type: y mandatory;
@@ -201,9 +115,6 @@ x{
 		scroll-snap-points-y: repeat(100vw);
 		-ms-scroll-snap-points-y: repeat(100vw);
 		-webkit-overflow-scrolling: touch; /*iOS Safari */
-		z-index:2200;
-		opacity:0;
-		scrollTop:0;
 	}
 
 	box > a {
@@ -214,19 +125,95 @@ x{
 		position: relative;
 		display: flex;
 		min-width:100vh;
-		min-height: 100vw;
+		min-height:75vw;
 		text-align: center;
 		justify-content: center;
-		background: #fff;
+		align-items: center;
+		cursor:crosshair;
 	}
 
 	box a img{
 		position:relative;
 		display: block;
-		width: 100vw;
+		height:100vh;
 		transform:rotate(90deg) translate(0vh,0vh);
 		object-fit: contain;
-		image-rendering: crisp-edges;
+		cursor:crosshair;
+		overflow: visible;
+	}
+
+	x{
+		display: none;
+	}
+
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+	body{
+		padding: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		overflow-y: hidden;
+	}
+
+	logo{
+		display: none;
+	}
+
+	list{
+		position: fixed;
+		display:block;
+		top:50vh;
+		left:50vw;
+		text-align: center;
+		transform:translate(-50%,0%);
+		z-index: 1000;
+	}
+
+	list span{
+		width:100vw;
+	}
+
+	buy{
+		display:none;
+	}
+
+
+	box{
+		position: relative;
+		display: none;
+		top:0vh;
+		left:0vw;
+		/* snap mandatory on horizontal axis  */
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		align-items: center;
+		height: 100vh;
+		width:100vw;
+		/* Enable Safari touch scrolling physics which is needed for scroll snap */
+		-webkit-overflow-scrolling: touch;
+		z-index: 2500;
+		background:#fff;
+		/*opacity: 0;*/
+	}
+
+	#1{
+		display:none;
+	}
+
+
+	box a{
+		background: #fff;
+		scroll-snap-align: center;		
+		width:101vw;
+	}
+
+	box a img{
+		width: 100vw;
 	}
 
 	front{
@@ -293,11 +280,5 @@ x{
 		display: block;
 		height: 3vh;
 		right:0vw;
-	}
-
-	.v{
-		position: relative;
-		display: block;
-		margin-bottom:-50%;
 	}
 }
