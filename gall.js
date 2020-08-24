@@ -100,7 +100,7 @@ $(document).ready(function(){
 
 		$("x").click(function(){
 			$("box").scrollTop(0);
-			$("box").css({display:"none",opacity:"0"});
+			$("box").animate({display:"none",opacity:"0"});
 			$("back").css("display","none");
 			$("next").css("display","none");
 			$(this).css("display","none");
