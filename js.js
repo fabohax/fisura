@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-    //index
-
     $("#contacto").click(function(){
 	    $("front").animate({
 		    	width: '100%'
@@ -17,9 +14,6 @@ $(document).ready(function(){
 	    	filter: 'invert(1)'
 	    })
   	});
-
-  	
-
 });
 
     

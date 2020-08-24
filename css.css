@@ -63,10 +63,10 @@ a{
 	text-decoration:none;
 }
 
-boxes{
+profiles{
 	position: relative;
 	display: block;
-	padding: 25vh 0vh 0vh;
+	padding: 21vh 0vh 0vh;
 	text-align: center;
 }
 
@@ -146,7 +146,7 @@ contacto{
 	z-index: 1000;
 }
 
-art{
+profile{
 	position: absolute;
 	display:block;
 	top:20vh;
@@ -163,7 +163,7 @@ art{
 	text-justify: auto;
 }
 
-art img{
+profile img{
 	width:45vh;
 }
 
@@ -178,13 +178,20 @@ obra{
 	bottom:0px;
 }
 
+.loading {
+  background: url("img/loading.gif") no-repeat center;
+}
+
 @media only screen and (max-width: 1025px) {
 	
-	boxes{
+	profiles{
 		position: relative;
 		display: block;
-		padding: 15vh 0vh 0vh;
+		margin:21vh 0vw;
+		padding: 0vh;
 		text-align: center;
+		z-index: 750;
+		background-image: linear-gradient(to top, white 95%, transparent);
 	}
 
 	bio{
@@ -196,11 +203,12 @@ obra{
 		min-width: 50vw;
 	}
 
-	art{
-		padding:0vw;
-		width: 75vw;
-		left:40vw;
-		bottom:5vh;
+	profile{
+		padding:0vw 1vw 0vh 0vw;
+		width: auto;
+		left:53vw;
+		top:21vh;
+		transform:translate(-50%,0%);
 	}
 
 }
