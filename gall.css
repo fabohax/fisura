@@ -189,6 +189,8 @@ list span{
 		left:0vw;
 		/* snap mandatory on horizontal axis  */
 		scroll-snap-type: x mandatory;
+		-webkit-scroll-snap-type: x mandatory;
+		-ms-scroll-snap-type: x mandatory;
 		overflow-x: scroll;
 		overflow-y: hidden;
 		align-items: center;
@@ -208,7 +210,9 @@ list span{
 
 	box a{
 		background: #fff;
-		scroll-snap-align: center;		
+		scroll-snap-align: center;
+		-webkit-scroll-snap-align: center;		
+		-ms-scroll-snap-align: center;		
 		width:101vw;
 	}
 
