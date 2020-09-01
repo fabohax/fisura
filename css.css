@@ -151,9 +151,9 @@ profile{
 	display:block;
 	top:20vh;
 	left:50vw;
-	bottom:20vh;
-	width: 30vw;
-	transform: translate(-25vw,0vw);
+	bottom:10vh;
+	width:77vw;
+	transform: translate(-21vw,0vw);
 	padding: 0vh 20vh;
 	line-height: 3.3vh;
 	font-size: 1.75vh;
@@ -164,7 +164,7 @@ profile{
 }
 
 profile img{
-	width:45vh;
+	width:75vw;
 }
 
 
