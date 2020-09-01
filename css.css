@@ -151,9 +151,9 @@ profile{
 	display:block;
 	top:20vh;
 	left:50vw;
-	bottom:10vh;
-	width:77vw;
-	transform: translate(-21vw,0vw);
+	bottom:0vh;
+	width: 30vw;
+	transform: translate(-25vw,0vw);
 	padding: 0vh 20vh;
 	line-height: 3.3vh;
 	font-size: 1.75vh;
@@ -164,7 +164,7 @@ profile{
 }
 
 profile img{
-	width:75vw;
+	width:50vh;
 }
 
 
@@ -204,11 +204,24 @@ obra{
 	}
 
 	profile{
-		padding:0vw 1vw 0vh 0vw;
-		width: auto;
-		left:53vw;
-		top:21vh;
-		transform:translate(-50%,0%);
+		position: absolute;
+		display:block;
+		top:20vh;
+		left:12vw;
+		bottom:0vh;
+		width: 81vw;
+		transform: translate(0vw,0vw);
+		padding: 0vh 1vh 0vh 0vh;
+		line-height: 3.3vh;
+		font-size: 1.75vh;
+		overflow-x:hidden;
+		overflow-y:scroll;
+		text-align: justify;
+		text-justify: auto;
+	}
+
+	profile img{
+		width:81vw;
 	}
 
 }
