@@ -196,7 +196,8 @@ list span{
 		scroll-snap-points-x: initial;
 		-ms-scroll-snap-points-x: initial;
                 scroll-snap-stop:always;
-                -ms-scroll-snap-stop:always;
+                -webkit-scroll-snap-stop:always;
+		-ms-scroll-snap-stop:always;
 		overflow-x: scroll;
 		overflow-y: hidden;
 		align-items: center;
