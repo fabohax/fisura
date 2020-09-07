@@ -108,6 +108,8 @@ list span{
 		flex-direction: column;
 		scroll-snap-type: y mandatory;
 		-ms-scroll-snap-type: y mandatory;
+                scroll-snap-stop: always;
+                -ms-scroll-snap-stop: always;
 		scroll-snap-points-x: initial;
 		-ms-scroll-snap-points-x: initial;
 		scroll-snap-points-x: repeat(100vw);
@@ -191,12 +193,13 @@ list span{
 		scroll-snap-type: x mandatory;
 		-webkit-scroll-snap-type: x mandatory;
 		-ms-scroll-snap-type: x mandatory;
+		scroll-snap-points-x: initial;
+		-ms-scroll-snap-points-x: initial;
 		overflow-x: scroll;
 		overflow-y: hidden;
 		align-items: center;
 		height: 100vh;
 		width:100vw;
-		/* Enable Safari touch scrolling physics which is needed for scroll snap */
 		-webkit-overflow-scrolling: touch;
 		z-index: 2500;
 		background:#fff;
