@@ -35,7 +35,7 @@ list span{
 }
 
 .loading {
-  background: url("img/loading.gif") no-repeat center;
+  background: url("../img/loading.gif") no-repeat center;
 }
 
 
@@ -105,22 +105,26 @@ list span{
 		bottom:0vh;
 		height:75vw;
 		width:100vh;
+		flex-flow: column nowrap;
 		flex-direction: column;
 		scroll-snap-type: y mandatory;
 		-ms-scroll-snap-type: y mandatory;
-                scroll-snap-stop: always;
-                -ms-scroll-snap-stop: always;
 		scroll-snap-points-x: initial;
 		-ms-scroll-snap-points-x: initial;
+		-webkit-scroll-snap-points-x: initial;
 		scroll-snap-points-x: repeat(100vw);
 		-ms-scroll-snap-points-x: repeat(100vw);
+		-webkit-scroll-snap-points-x: repeat(100vw);
 		scroll-snap-points-y: repeat(100vw);
 		-ms-scroll-snap-points-y: repeat(100vw);
+		-webkit-scroll-snap-points-y: repeat(100vw);
 		-webkit-overflow-scrolling: touch; /*iOS Safari */
 	}
 
 	box > a {
 	  scroll-snap-align: center;
+	  scroll-snap-stop: always;
+	  flex: none;
 	}
 
 	box a{
@@ -132,6 +136,7 @@ list span{
 		justify-content: center;
 		align-items: center;
 		cursor:crosshair;
+		scroll-snap-stop: always;
 	}
 
 	box a img{
@@ -142,6 +147,7 @@ list span{
 		object-fit: contain;
 		cursor:crosshair;
 		overflow: visible;
+		scroll-snap-stop: always;
 	}
 
 	x{
@@ -195,8 +201,8 @@ list span{
 		-ms-scroll-snap-type: x mandatory;
 		scroll-snap-points-x: initial;
 		-ms-scroll-snap-points-x: initial;
-                scroll-snap-stop:always;
-                -webkit-scroll-snap-stop:always;
+        scroll-snap-stop:always;
+        -webkit-scroll-snap-stop:always;
 		-ms-scroll-snap-stop:always;
 		overflow-x: scroll;
 		overflow-y: hidden;
@@ -213,6 +219,12 @@ list span{
 		display:none;
 	}
 
+	box > a{
+		scroll-snap-stop:always;
+        -webkit-scroll-snap-stop:always;
+		-ms-scroll-snap-stop:always;
+	}
+
 
 	box a{
 		background: #fff;
@@ -224,6 +236,9 @@ list span{
 
 	box a img{
 		width: 100vw;
+		scroll-snap-stop:always;
+        -webkit-scroll-snap-stop:always;
+		-ms-scroll-snap-stop:always;
 	}
 
 	front{
