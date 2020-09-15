@@ -205,7 +205,7 @@ mouth h1:hover{
 		position:absolute;
 		display:block;
 		top:50vh;
-		left:0.75vw;
+		left:50vw;
 		text-align: center;
 	}
 
@@ -214,11 +214,11 @@ mouth h1:hover{
 		display: none;
 		width: auto;
 		height: auto;
-		max-width: 70vw;
+		width: 70vw;
 		opacity: 1;
 		text-align: center;
 		z-index:1000;
-	    transform: translate(25%, -50%);
+	    transform: translate(-46%, -50%);
 	}
 
 }
