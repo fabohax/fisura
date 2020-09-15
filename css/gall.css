@@ -124,7 +124,6 @@ list span{
 	box > a {
 	  scroll-snap-align: center;
 	  scroll-snap-stop: always;
-	  flex: none;
 	}
 
 	box a{
@@ -227,6 +226,7 @@ list span{
 
 
 	box a{
+		display: block;
 		background: #fff;
 		scroll-snap-align: center;
 		-webkit-scroll-snap-align: center;		
