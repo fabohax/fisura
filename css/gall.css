@@ -252,7 +252,7 @@ list span{
 		display: block;
 		top:0vh;
 		left:0vw;
-		height: 6vh;
+		height: 12vh;
 		width: 6vh;
 		z-index: 5000;
 	}
@@ -262,7 +262,7 @@ list span{
 		display: none;
 		top:0vh;
 		left:0vw;
-		height: 6vh;
+		height: 12vh;
 		width: 6vh;
 		z-index:5000;
 	}
